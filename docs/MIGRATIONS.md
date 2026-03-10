@@ -1,4 +1,4 @@
-# Database Migration Standards for Beruniy-Qabul
+# Database Migration Standards for University Admission System
 
 To ensure zero-downtime updates, all database migrations must be **backward compatible**. The old version of the code must continue to work while the new migrations are being applied and before the code is swapped.
 

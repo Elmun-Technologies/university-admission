@@ -28,8 +28,8 @@ A high-performance, multi-tenant University Admission System built with Yii2 Adv
 
 ### 2. Local Development
 ```bash
-git clone https://github.com/Elmun-Technologies/beruniy-qabul.git
-cd beruniy-qabul
+git clone https://github.com/Elmun-Technologies/university-admission.git
+cd university-admission
 docker-compose up -d
 docker-compose exec php composer update
 docker-compose exec php php yii migrate --interactive=0

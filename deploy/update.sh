@@ -19,7 +19,7 @@ if [[ -z "$NAME" ]]; then
     exit 1
 fi
 
-DEPLOY_DIR="/opt/beruniy/${NAME}"
+DEPLOY_DIR="/opt/university-admission/${NAME}"
 cd "${DEPLOY_DIR}"
 
 echo "--- 🔄 Updating Instance: ${NAME} ---"

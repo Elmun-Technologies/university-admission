@@ -9,7 +9,7 @@ echo "--- 🏢 University Admission System Onboarding ---"
 
 # 1. Interactive Input
 read -p "University Name (e.g. Tashkent State): " UNI_NAME_RAW
-read -p "Domain Name (e.g. tsu.beruniy-qabul.uz): " DOMAIN
+read -p "Domain Name (e.g. tsu.university-admission.uz): " DOMAIN
 read -p "Nginx Port (e.g. 8031): " PORT
 read -p "DB External Port (e.g. 3631): " DB_PORT
 read -p "Rector Name: " RECTOR

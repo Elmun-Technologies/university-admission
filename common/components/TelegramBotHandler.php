@@ -56,7 +56,7 @@ class TelegramBotHandler
 
     public function handleStart($chatId)
     {
-        $msg = "<b>Assalomu alaykum!</b>\n\nBeruniy-Qabul tizimi botiga xush kelibsiz.\nUshbu bot xodimlar uchun statistik ma'lumotlar va abiturientlarni qidirish imkonini beradi.";
+        $msg = "<b>Assalomu alaykum!</b>\n\nUniversity Admission System botiga xush kelibsiz.\nUshbu bot xodimlar uchun statistik ma'lumotlar va abiturientlarni qidirish imkonini beradi.";
         return $this->sendMessage($chatId, $msg);
     }
 

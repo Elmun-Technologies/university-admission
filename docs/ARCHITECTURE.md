@@ -1,4 +1,4 @@
-# Beruniy-Qabul System Architecture
+# University Admission System Architecture
 
 ## Overview
 The system is built on Yii2 Advanced Application Template, providing a multi-app structure (frontend, backend, api) with shared models and components.
@@ -27,7 +27,7 @@ graph TD
 2. **Identification**: Uploads Passport & Photo. Validated via `PinflValidator`.
 3. **Exam**: Registers for an available slot. Questions generated from subject pool.
 4. **Scoring**: System calculates score instantly. If passed, status moves to `CONTRACT`.
-5. **Contract**: Applicant signs e-offerta. System generates unique `BRN-2026-XXXXXX` number.
+5. **Contract**: Applicant signs e-offerta. System generates unique `UNI-2026-XXXXXX` number.
 6. **Payment**: Once payment recorded, status becomes `PAID`.
 
 ## Key Relationships
