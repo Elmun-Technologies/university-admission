@@ -9,9 +9,9 @@ use Yii;
 
 /**
  * QuestionImporter processes complex 12-column Excel sheets sequentially mapping subjects to questions and options natively.
- * 
+ *
  * Expected Excel format:
- * | Question (uz) | Question (ru) | Option A (uz) | Option A (ru) | Option B (uz) | Option B (ru) | 
+ * | Question (uz) | Question (ru) | Option A (uz) | Option A (ru) | Option B (uz) | Option B (ru) |
  * | Option C (uz) | Option C (ru) | Option D (uz) | Option D (ru) | Correct (A/B/C/D) | Difficulty |
  */
 class QuestionImporter
@@ -125,7 +125,6 @@ class QuestionImporter
             }
             $transaction->commit();
             return ['success_count' => $successCount, 'error_count' => 0];
-
         } catch (\Exception $e) {
             $transaction->rollBack();
             Yii::error("Import transaction failed: " . $e->getMessage());

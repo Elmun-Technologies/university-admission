@@ -63,7 +63,7 @@ $steps = [
             </div>
 
             <div class="d-flex justify-content-between position-relative" style="z-index: 2;">
-                <?php foreach ($steps as $index => $step):
+                <?php foreach ($steps as $index => $step) :
                     $isCompleted = $index < $currentStep;
                     $isCurrent = $index == $currentStep;
                     $bgClass = $isCompleted ? 'bg-success text-white' : ($isCurrent ? 'bg-primary text-white shadow' : 'bg-white text-muted border border-2');
@@ -71,9 +71,9 @@ $steps = [
                     <div class="text-center" style="width: 80px;">
                         <div class="rounded-circle d-flex align-items-center justify-content-center mx-auto <?= $bgClass ?>"
                             style="width: 45px; height: 45px; font-size: 1.2rem; transition: 0.3s;">
-                            <?php if ($isCompleted): ?>
+                            <?php if ($isCompleted) : ?>
                                 <i class="bi bi-check-lg"></i>
-                            <?php else: ?>
+                            <?php else : ?>
                                 <i class="bi bi-<?= $step['icon'] ?>"></i>
                             <?php endif; ?>
                         </div>
@@ -91,7 +91,7 @@ $steps = [
         <div class="col-lg-8">
             <div class="card shadow border-primary border-2 h-100">
                 <div class="card-body p-4 p-md-5 text-center d-flex flex-column justify-content-center">
-                    <?php if ($student->status == Student::STATUS_NEW): ?>
+                    <?php if ($student->status == Student::STATUS_NEW) : ?>
                         <i class="bi bi-card-checklist text-primary mb-3" style="font-size: 3rem;"></i>
                         <h4 class="fw-bold">Arizangizni to'ldiring</h4>
                         <p class="text-muted mb-4">Ariza topshirishni yakunlash uchun shaxsiy ma'lumotlaringizni to'ldiring,
@@ -100,7 +100,7 @@ $steps = [
                             class="btn btn-primary btn-lg rounded-pill px-5 mx-auto">To'ldirishni boshlash <i
                                 class="bi bi-arrow-right"></i></a>
 
-                    <?php elseif ($student->status == Student::STATUS_ANKETA): ?>
+                    <?php elseif ($student->status == Student::STATUS_ANKETA) : ?>
                         <i class="bi bi-calendar-check text-primary mb-3" style="font-size: 3rem;"></i>
                         <h4 class="fw-bold">Imtihonga yoziling</h4>
                         <p class="text-muted mb-4">Arizangiz qabul qilindi! Endi o'zingiz tanlagan yo'nalish bo'yicha kirish
@@ -109,7 +109,7 @@ $steps = [
                             class="btn btn-primary btn-lg rounded-pill px-5 mx-auto">Imtihon sanasini tanlash <i
                                 class="bi bi-arrow-right"></i></a>
 
-                    <?php elseif ($student->status == Student::STATUS_EXAM_SCHEDULED): ?>
+                    <?php elseif ($student->status == Student::STATUS_EXAM_SCHEDULED) : ?>
                         <i class="bi bi-laptop text-primary mb-3" style="font-size: 3rem;"></i>
                         <h4 class="fw-bold">Imtihonga tayyorlaning</h4>
                         <p class="text-muted mb-2">Sizning imtihoningiz belgilandi.</p>
@@ -120,7 +120,7 @@ $steps = [
                             class="btn btn-primary btn-lg rounded-pill px-5 mx-auto">Imtihonni boshlash <i
                                 class="bi bi-rocket-takeoff"></i></a>
 
-                    <?php elseif ($student->status == Student::STATUS_EXAM_FAILED): ?>
+                    <?php elseif ($student->status == Student::STATUS_EXAM_FAILED) : ?>
                         <i class="bi bi-x-octagon text-danger mb-3" style="font-size: 3rem;"></i>
                         <h4 class="fw-bold text-danger">Imtihondan o'ta olmadingiz</h4>
                         <p class="text-muted mb-4">Afsuski, siz yetarli ball to'play olmadingiz. Keyingi yil qayta urinib
@@ -128,7 +128,7 @@ $steps = [
                         <a href="<?= Url::to(['/exam/results', 'id' => $examAttempt->id]) ?>"
                             class="btn btn-outline-danger rounded-pill px-5 mx-auto">Natijalarni ko'rish</a>
 
-                    <?php elseif ($student->status == Student::STATUS_EXAM_PASSED): ?>
+                    <?php elseif ($student->status == Student::STATUS_EXAM_PASSED) : ?>
                         <i class="bi bi-file-earmark-check text-success mb-3" style="font-size: 3rem;"></i>
                         <h4 class="fw-bold text-success">Tabriklaymiz! Siz qabul qilindingiz.</h4>
                         <p class="text-muted mb-4">Davom etish uchun ommaviy ofertani o'qib, elektron tarzda imzolashingiz
@@ -137,7 +137,7 @@ $steps = [
                             class="btn btn-success btn-lg rounded-pill px-5 mx-auto"><i class="bi bi-pen"></i> Shartnomani
                             tuzish</a>
 
-                    <?php elseif ($student->status == Student::STATUS_CONTRACT_SIGNED): ?>
+                    <?php elseif ($student->status == Student::STATUS_CONTRACT_SIGNED) : ?>
                         <i class="bi bi-credit-card text-primary mb-3" style="font-size: 3rem;"></i>
                         <h4 class="fw-bold">To'lovni amalga oshiring</h4>
                         <p class="text-muted mb-4">Shartnoma tuzildi. Talabalar safiga qo'shilish uchun to'lovni tasdiqlang.
@@ -146,7 +146,7 @@ $steps = [
                             class="btn btn-primary btn-lg rounded-pill px-5 mx-auto"><i class="bi bi-wallet2"></i>
                             To'lash</a>
 
-                    <?php elseif ($student->status == Student::STATUS_PAID): ?>
+                    <?php elseif ($student->status == Student::STATUS_PAID) : ?>
                         <i class="bi bi-stars text-warning mb-3" style="font-size: 4rem;"></i>
                         <h3 class="fw-bold text-primary">Siz Rasman Talabasiz!</h3>
                         <p class="text-muted fs-5 mb-0">Hujjatlaringiz va to'lov muvaffaqiyatli qabul qilindi. Ta'lim
@@ -170,7 +170,7 @@ $steps = [
                 </div>
             </div>
 
-            <?php if ($student->direction_id): ?>
+            <?php if ($student->direction_id) : ?>
                 <div class="card shadow-sm border-0 mb-3">
                     <div class="card-body">
                         <div class="small text-muted mb-1">Yo'nalish</div>
@@ -187,7 +187,7 @@ $steps = [
                 </div>
             <?php endif; ?>
 
-            <?php if ($oferta): ?>
+            <?php if ($oferta) : ?>
                 <div class="card shadow-sm border-0 bg-primary bg-opacity-10 border-start border-4 border-primary">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-2">
@@ -199,7 +199,7 @@ $steps = [
                         <h5 class="fw-bold text-primary mb-0">
                             <?= number_format($oferta->payment_amount, 0, '', ' ') ?> UZS
                         </h5>
-                        <?php if ($oferta->contract_number): ?>
+                        <?php if ($oferta->contract_number) : ?>
                             <div class="small text-muted mt-2">Shartnoma: #
                                 <?= Html::encode($oferta->contract_number) ?>
                             </div>

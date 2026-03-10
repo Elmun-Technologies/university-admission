@@ -36,8 +36,9 @@ class PaymeController extends Controller
 
     protected function authenticate($header)
     {
-        if (!$header || strpos($header, 'Basic ') !== 0)
+        if (!$header || strpos($header, 'Basic ') !== 0) {
             return false;
+        }
 
         $payload = base64_decode(substr($header, 6));
         $parts = explode(':', $payload);

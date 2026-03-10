@@ -1,0 +1,109 @@
+/* University Admission System - Design System & UI/UX Polish */
+
+:root {
+    --primary-color: #0d6efd;
+    --primary-hover: #0b5ed7;
+    --success-color: #198754;
+    --error-color: #dc3545;
+    --warning-color: #ffc107;
+    --bg-light: #f8f9fa;
+    --text-muted: #6c757d;
+    --border-radius: 12px;
+    --transition-speed: 0.3s;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Global Loading Overlay */
+#global-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+}
+
+.spinner-custom {
+    width: 3rem;
+    height: 3rem;
+    border: 0.25em solid var(--primary-color);
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spinner-border .75s linear infinite;
+}
+
+/* Form Polish */
+.form-control, .form-select {
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    border-color: #dee2e6;
+    transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+.btn {
+    border-radius: 8px;
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+    transition: all var(--transition-speed);
+}
+
+/* Mobile Responsiveness & Touch Targets */
+@media (max-width: 576px) {
+    .btn-lg {
+        padding: 0.8rem 1rem;
+        width: 100%;
+    }
+    
+    .tap-target {
+        min-height: 44px;
+        min-width: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* Error States */
+.invalid-feedback {
+    font-weight: 500;
+    font-size: 0.85rem;
+    margin-top: 0.4rem;
+}
+
+/* Success & Animations */
+.confetti-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10000;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+}

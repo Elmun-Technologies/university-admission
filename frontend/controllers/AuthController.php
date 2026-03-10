@@ -107,7 +107,6 @@ class AuthController extends Controller
 
         // Auto format +998 via JS on frontend, but handle edge case internally if needed
         if ($model->load(Yii::$app->request->post())) {
-
             $user = $model->register();
             if ($user !== false) {
                 Yii::$app->session->setFlash('success', Yii::t('app', 'Tabriklaymiz, Muvaffaqiyatli ro\'yxatdan o\'tdingiz!'));

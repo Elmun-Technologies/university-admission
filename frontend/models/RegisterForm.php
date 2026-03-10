@@ -36,7 +36,7 @@ class RegisterForm extends Model
             ['phone', 'unique', 'targetClass' => '\common\models\Student', 'message' => Yii::t('app', 'Bu telefon raqam ro\'yxatdan o\'tgan.')],
 
             // Passwords
-            ['password', 'string', 'min' => 6],
+            ['password', 'string', 'min' => 8],
             ['password_confirm', 'compare', 'compareAttribute' => 'password', 'message' => Yii::t('app', 'Parollar mos emas.')],
 
             // Captcha to block bots
@@ -111,7 +111,7 @@ class RegisterForm extends Model
             $auth = Yii::$app->authManager;
             if ($auth) {
                 // Assuming 'operator' can act as base or we build 'applicant'
-                // We'll leave this empty for now since applicants aren't RBAC checked 
+                // We'll leave this empty for now since applicants aren't RBAC checked
                 // in the same manner as staff usually
             }
 

@@ -2,6 +2,7 @@
 
 use yii\bootstrap5\ActiveForm;
 use yii\helpers\Html;
+use yii\widgets\MaskedInput;
 use frontend\widgets\StepProgress;
 
 $this->title = Yii::t('app', 'Shaxsiy ma\'lumotlar');
@@ -61,7 +62,9 @@ $this->params['breadcrumbs'][] = $this->title;
                     <?= $form->field($model, 'phone')->textInput(['readonly' => true, 'class' => 'form-control bg-light']) ?>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <?= $form->field($model, 'phone2')->textInput(['maxlength' => true, 'placeholder' => '+998...']) ?>
+                    <?= $form->field($model, 'phone2')->widget(MaskedInput::class, [
+                        'mask' => '+\9\98999999999',
+                    ]) ?>
                 </div>
                 <div class="col-md-6 mb-3">
                     <?= $form->field($model, 'email')->textInput(['type' => 'email']) ?>

@@ -30,7 +30,7 @@ class RecoveryController extends Controller
             return;
         }
 
-        usort($files, function($a, $b) {
+        usort($files, function ($a, $b) {
             return filemtime($b) - filemtime($a);
         });
 
@@ -39,7 +39,7 @@ class RecoveryController extends Controller
 
         if ($this->confirm("Are you sure you want to RESTORE this backup? This will overwrite CURRENT data.")) {
             $this->stdout("⏳ Restoring... (Executing mysql import)\n");
-            
+
             $db = Yii::$app->db;
             $dsn = $db->dsn;
             preg_match('/dbname=([^;]+)/', $dsn, $matches);
@@ -54,9 +54,9 @@ class RecoveryController extends Controller
                 escapeshellarg($latest)
             );
 
-            // In Docker environment, we use: 
+            // In Docker environment, we use:
             // docker exec -i mariadb mysql -u... -p... db < backup.sql
-            
+
             $this->stdout("✅ Restore command prepared. Run it manually for safety:\n$cmd\n", Console::FG_YELLOW);
         }
     }

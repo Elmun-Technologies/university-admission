@@ -18,8 +18,9 @@ class CrmSyncJob extends BaseObject implements JobInterface
     public function execute($queue)
     {
         $item = CrmPush::findOne($this->pushId);
-        if (!$item || $item->status === 1)
+        if (!$item || $item->status === 1) {
             return;
+        }
 
         $sync = new AmoCrmSync();
 

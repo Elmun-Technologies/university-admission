@@ -6,6 +6,7 @@
 use yii\bootstrap5\ActiveForm;
 use yii\bootstrap5\Html;
 use yii\captcha\Captcha;
+use yii\widgets\MaskedInput;
 
 $this->title = Yii::t('app', 'Ro\'yxatdan o\'tish');
 $this->params['breadcrumbs'][] = $this->title;
@@ -27,12 +28,14 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     </div>
 
-    <?= $form->field($model, 'phone', [
-        'inputOptions' => [
+    <?= $form->field($model, 'phone')->widget(MaskedInput::class, [
+        'mask' => '+\9\98999999999',
+        'options' => [
             'class' => 'form-control',
-            'placeholder' => '+998901234567',
+            'placeholder' => '+998XXXXXXXXX',
+            'type' => 'tel'
         ]
-    ])->textInput() ?>
+    ]) ?>
 
     <div class="row">
         <div class="col-6">

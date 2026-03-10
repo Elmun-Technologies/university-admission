@@ -29,8 +29,9 @@ class AmoCrmSync
     public function syncNewStudent(Student $student)
     {
         $existing = $this->_client->findLeadByPhone($student->phone);
-        if ($existing)
+        if ($existing) {
             return $existing['id'];
+        }
 
         $leadData = [
             'name' => 'Abiturient: ' . $student->getFullName(),
@@ -47,8 +48,9 @@ class AmoCrmSync
     public function syncStatusChange(Student $student, $newStatus)
     {
         $lead = $this->_client->findLeadByPhone($student->phone);
-        if (!$lead)
+        if (!$lead) {
             return false;
+        }
 
         // Map internal status to AmoCRM Pipeline Stages (simplified mapping)
         $stageId = 0;
@@ -77,8 +79,9 @@ class AmoCrmSync
     {
         $student = $oferta->student;
         $lead = $this->_client->findLeadByPhone($student->phone);
-        if (!$lead)
+        if (!$lead) {
             return false;
+        }
 
         return $this->_client->request("leads/{$lead['id']}", 'PATCH', [
             'price' => (int) $oferta->payment_amount,

@@ -57,6 +57,10 @@ AppAsset::register($this);
 <body class="d-flex flex-column h-100">
     <?php $this->beginBody() ?>
 
+    <div id="global-loader">
+        <div class="spinner-custom"></div>
+    </div>
+
     <header>
         <?php
         NavBar::begin([
@@ -72,9 +76,11 @@ AppAsset::register($this);
         ];
 
         if (Yii::$app->user->isGuest) {
+            $menuItems[] = ['label' => Yii::t('app', 'Yordam'), 'url' => ['/help/index']];
             $menuItems[] = ['label' => Yii::t('app', 'Ro\'yxatdan o\'tish'), 'url' => ['/auth/register']];
             $menuItems[] = ['label' => Yii::t('app', 'Kirish'), 'url' => ['/auth/login'], 'options' => ['class' => 'fw-bold text-primary']];
         } else {
+            $menuItems[] = ['label' => Yii::t('app', 'Yordam'), 'url' => ['/help/index']];
             $menuItems[] = ['label' => Yii::t('app', 'Mening arizam'), 'url' => ['/dashboard/index']];
             $menuItems[] = '<li>'
                 . Html::beginForm(['/auth/logout'], 'post', ['class' => 'd-flex'])

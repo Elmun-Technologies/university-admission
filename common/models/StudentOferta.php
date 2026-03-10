@@ -93,7 +93,7 @@ class StudentOferta extends ActiveRecord
     }
 
     /**
-     * Generates a unique sequential contract number globally 
+     * Generates a unique sequential contract number globally
      * e.g BRN-2026-000123
      */
     public static function generateContractNumber($branchId)

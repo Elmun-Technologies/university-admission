@@ -12,7 +12,7 @@ $this->title = $model->getFullName();
 $this->params['breadcrumbs'][] = ['label' => 'Abiturientlar', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 
-$photoUrl = $model->photo ? Yii::getAlias('@web/uploads/photos/') . $model->photo : 'https://ui-avatars.com/api/?name='.urlencode($model->getFullName());
+$photoUrl = $model->photo ? Yii::getAlias('@web/uploads/photos/') . $model->photo : 'https://ui-avatars.com/api/?name=' . urlencode($model->getFullName());
 ?>
 <div class="student-view">
 
@@ -80,7 +80,7 @@ $photoUrl = $model->photo ? Yii::getAlias('@web/uploads/photos/') . $model->phot
                     </div>
                 </div>
                 
-                <?php if($model->consulting_id): ?>
+                <?php if ($model->consulting_id) : ?>
                 <div class="col-12 mt-3 pt-3 border-top">
                     <div class="bg-light p-3 rounded" style="border-left: 4px solid #0dcaf0;">
                         <span class="small text-muted fw-bold text-uppercase block mb-1">Konsalting Agentligi</span>
@@ -116,9 +116,9 @@ $photoUrl = $model->photo ? Yii::getAlias('@web/uploads/photos/') . $model->phot
         <!-- Tab 3: Exam -->
         <div class="tab-pane fade" id="exam" role="tabpanel" aria-labelledby="exam-tab">
             <?php $exam = current($model->getStudentExams()->all()); ?>
-            <?php if(!$exam): ?>
+            <?php if (!$exam) : ?>
                 <div class="alert alert-warning border-0"><i class="bi bi-info-circle me-2"></i>Abiturient hali imtihon topshirmagan yoki imtihon belgilamagan.</div>
-            <?php else: ?>
+            <?php else : ?>
                 <div class="row text-center mb-4">
                     <div class="col-md-4">
                         <div class="p-4 bg-light rounded shadow-sm border">
@@ -144,13 +144,13 @@ $photoUrl = $model->photo ? Yii::getAlias('@web/uploads/photos/') . $model->phot
 
         <!-- Tab 4: Contract -->
         <div class="tab-pane fade" id="contract" role="tabpanel" aria-labelledby="contract-tab">
-            <?php if($model->status < Student::STATUS_EXAM_PASSED): ?>
+            <?php if ($model->status < Student::STATUS_EXAM_PASSED) : ?>
                 <div class="alert alert-danger border-0"><i class="bi bi-exclamation-triangle me-2"></i>Abiturient shartnoma bosqichiga yetib kelmagan.</div>
-            <?php else: ?>
+            <?php else : ?>
                 <?php $oferta = $model->studentOferta; ?>
-                <?php if(!$oferta): ?>
+                <?php if (!$oferta) : ?>
                     <?= Html::a('<i class="bi bi-file-earmark-plus"></i> Shartnoma Yaratish', ['/contract/generate', 'id' => $model->id], ['class' => 'btn btn-primary', 'data-method' => 'post']) ?>
-                <?php else: ?>
+                <?php else : ?>
                     <div class="row">
                         <div class="col-md-6 border-end">
                             <h5 class="fw-bold mb-4">Shartnoma Holati</h5>
@@ -193,17 +193,17 @@ $photoUrl = $model->photo ? Yii::getAlias('@web/uploads/photos/') . $model->phot
         <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab">
             <h5 class="fw-bold mb-4">Tarix va O'zgarishlar</h5>
             <div class="timeline ps-3" style="border-left: 2px solid #e9ecef;">
-                <?php 
-                $history = json_decode($model->status_history ?? '[]', true); 
-                if(empty($history)): 
-                ?>
-                    <div class="text-muted small ms-3">Hali o'zgarishlar tarixi mavjud emas.</div>
-                <?php else: ?>
-                    <?php 
-                    $history = array_reverse($history); // Newest at top
-                    foreach($history as $h): 
-                        $statusObj = new Student(); // Temp just physically for mapping label natively if we wanted to
+                <?php
+                $history = json_decode($model->status_history ?? '[]', true);
+                if (empty($history)) :
                     ?>
+                    <div class="text-muted small ms-3">Hali o'zgarishlar tarixi mavjud emas.</div>
+                <?php else : ?>
+                    <?php
+                    $history = array_reverse($history); // Newest at top
+                    foreach ($history as $h) :
+                        $statusObj = new Student(); // Temp just physically for mapping label natively if we wanted to
+                        ?>
                     <div class="position-relative mb-4 ms-4">
                         <div class="position-absolute bg-primary rounded-circle" style="width: 14px; height: 14px; left: -31px; top: 5px; border: 3px solid #fff; box-shadow: 0 0 0 2px #0d6efd;"></div>
                         <div class="card border-0 shadow-sm bg-light">
@@ -212,7 +212,7 @@ $photoUrl = $model->photo ? Yii::getAlias('@web/uploads/photos/') . $model->phot
                                     <span class="badge bg-primary">Holat: <?= Html::encode($h['to']) ?></span>
                                     <small class="text-muted fw-bold"><i class="bi bi-clock me-1"></i><?= date('d.m.Y H:i', $h['time']) ?></small>
                                 </div>
-                                <?php if(!empty($h['note'])): ?>
+                                <?php if (!empty($h['note'])) : ?>
                                     <p class="mb-1 text-dark small" style="line-height:1.4">"<?= Html::encode($h['note']) ?>"</p>
                                 <?php endif; ?>
                                 <small class="text-muted" style="font-size:0.7rem">Muallif ID: <?= Html::encode($h['user_id']) ?></small>

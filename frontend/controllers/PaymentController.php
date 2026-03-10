@@ -40,8 +40,9 @@ class PaymentController extends Controller
     protected function findStudentModel()
     {
         $student = Student::findOne(['created_by' => Yii::$app->user->id]);
-        if (!$student)
+        if (!$student) {
             throw new NotFoundHttpException('Profile not found.');
+        }
         return $student;
     }
 
@@ -73,7 +74,6 @@ class PaymentController extends Controller
         $oferta = StudentOferta::findOne(['student_id' => $student->id]);
 
         if ($oferta && $oferta->payment_status != StudentOferta::PAYMENT_PAID) {
-
             // For production, inject Click or Payme component. Using Mock interface natively here.
             $gateway = new FakePaymentGateway();
 
@@ -96,7 +96,6 @@ class PaymentController extends Controller
         $gateway = new FakePaymentGateway();
 
         if ($gateway->verifyPayment($token)) {
-
             // Must lookup which student this token belonged to manually since we bypass Identity context here
             $decoded = base64_decode($token);
             $parts = explode('_', $decoded);

@@ -138,7 +138,14 @@ class Student extends \common\db\BranchActiveRecord
 
             // Phone regex pattern +998XXXXXXXXX
             [['phone', 'phone2'], 'match', 'pattern' => '/^\+998\d{9}$/',
-                'message' => 'Telefon raqam formati +998XXXXXXXXX bo\'lishi kerak.'],
+                'message' => Yii::t('app', 'Telefon raqami +998XXXXXXXXX ko\'rinishida bo\'lishi kerak')],
+
+            // Passport and PINFL Patterns
+            [['passport_series'], 'match', 'pattern' => '/^[A-Z]{2}$/', 'message' => Yii::t('app', 'Pasport seriyasi 2 ta bosh harfdan iborat bo\'lishi kerak')],
+            [['passport_number'], 'match', 'pattern' => '/^[0-9]{7}$/', 'message' => Yii::t('app', 'Pasport raqami 7 ta raqamdan iborat bo\'lishi kerak')],
+            [['pinfl'], 'match', 'pattern' => '/^[0-9]{14}$/', 'message' => Yii::t('app', 'JSHSHIR 14 ta raqamdan iborat bo\'lishi kerak')],
+            [['pinfl'], 'validatePinflChecksum'],
+            [['birth_date'], 'validateBirthDate'],
 
             // Status defaults
             ['status', 'default', 'value' => self::STATUS_NEW],
@@ -156,6 +163,45 @@ class Student extends \common\db\BranchActiveRecord
             [['course_id'], 'exist', 'skipOnError' => true, 'targetClass' => Course::class,
                 'targetAttribute' => ['course_id' => 'id']],
         ];
+    }
+
+    /**
+     * Custom validator for age (16-35 years)
+     */
+    public function validateBirthDate($attribute, $params)
+    {
+        if (!$this->hasErrors()) {
+            $birthDate = strtotime($this->$attribute);
+            $minAge = 16;
+            $maxAge = 35;
+
+            $age = (int)date('Y') - (int)date('Y', $birthDate);
+            if (date('md', $birthDate) > date('md')) {
+                $age--;
+            }
+
+            if ($age < $minAge || $age > $maxAge) {
+                $this->addError($attribute, Yii::t('app', 'Yoshingiz {min}-{max} oralig\'ida bo\'lishi kerak', [
+                    'min' => $minAge,
+                    'max' => $maxAge
+                ]));
+            }
+        }
+    }
+
+    /**
+     * Custom validator for PINFL checksum
+     */
+    public function validatePinflChecksum($attribute, $params)
+    {
+        if (!$this->hasErrors()) {
+            $pinfl = $this->$attribute;
+            // Simplified checksum check for 14 digits, real logic often depends on specific Uzbek gov algorithms
+            // but for now we enforce 14 numeric digits as a base integrity check.
+            if (!preg_match('/^[0-9]{14}$/', $pinfl)) {
+                $this->addError($attribute, Yii::t('app', 'JSHSHIR noto\'g\'ri formatda.'));
+            }
+        }
     }
 
     /**

@@ -62,8 +62,9 @@ class TelegramBotHandler
 
     public function handleStats($chatId)
     {
-        if (!$this->isAuthorized($chatId))
+        if (!$this->isAuthorized($chatId)) {
             return $this->sendUnauthorized($chatId);
+        }
 
         $today = date('Y-m-d');
         $newStudents = Student::find()->where(['>=', 'created_at', strtotime($today)])->count();
@@ -99,8 +100,9 @@ class TelegramBotHandler
 
     public function handleBackupRequest($chatId)
     {
-        if (!$this->isAuthorized($chatId, true))
+        if (!$this->isAuthorized($chatId, true)) {
             return $this->sendUnauthorized($chatId);
+        }
 
         // Trigger console backup command via shell or background job
         Yii::$app->queue->push(new \common\jobs\SendBackupToTelegramJob([
@@ -136,8 +138,9 @@ class TelegramBotHandler
 
     protected function sendMessage($chatId, $text)
     {
-        if (!$this->_token)
+        if (!$this->_token) {
             return false;
+        }
 
         $url = "https://api.telegram.org/bot{$this->_token}/sendMessage";
         $data = [

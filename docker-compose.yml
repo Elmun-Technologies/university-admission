@@ -44,6 +44,21 @@ services:
     networks:
       - app_network
 
+  worker:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    container_name: ${PROJECT_NAME}_worker
+    restart: unless-stopped
+    command: php yii queue/listen --verbose=1 --color=0
+    volumes:
+      - ./:/app
+    depends_on:
+      - mariadb
+    env_file: .env
+    networks:
+      - app_network
+
 networks:
   app_network:
     driver: bridge

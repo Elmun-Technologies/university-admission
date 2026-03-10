@@ -42,14 +42,14 @@ $this->params['breadcrumbs'][] = $this->title;
                 'label' => 'Eski qiymat',
                 'value' => function ($model) {
                         return $model['old_value'];
-                    }
+                }
             ],
             [
                 'attribute' => 'new_value',
                 'label' => 'Yangi qiymat',
                 'value' => function ($model) {
                         return $model['new_value'];
-                    }
+                }
             ],
             [
                 'attribute' => 'ip_address',
@@ -60,7 +60,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'label' => 'Foydalanuvchi',
                 'value' => function ($model) {
                         return $model['user_id'] ?: 'System';
-                    }
+                }
             ]
         ],
     ]); ?>

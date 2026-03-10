@@ -35,7 +35,6 @@ class SettingsController extends Controller
         $model = Branch::findOne($branchId) ?? new Branch();
 
         if ($model->load(Yii::$app->request->post())) {
-
             // Assume ImageUpload behavior natively attached
             $model->logo = \yii\web\UploadedFile::getInstance($model, 'logo');
 

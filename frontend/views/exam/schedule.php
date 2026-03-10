@@ -32,15 +32,15 @@ $this->params['breadcrumbs'][] = $this->title;
 
             <h5 class="mt-4 mb-3">Mavjud sanalar:</h5>
 
-            <?php if (empty($dates)): ?>
+            <?php if (empty($dates)) : ?>
                 <div class="text-center py-5 text-muted border rounded bg-light">
                     <i class="bi bi-calendar-x fs-1"></i>
                     <p class="mt-2">Hozirda bo'sh joylar yoki kelgusi imtihon sanalari mavjud emas.<br>Iltimos, keyinroq
                         qayta urining.</p>
                 </div>
-            <?php else: ?>
+            <?php else : ?>
                 <div class="list-group">
-                    <?php foreach ($dates as $date): ?>
+                    <?php foreach ($dates as $date) : ?>
                         <div
                             class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3">
                             <div>
@@ -67,7 +67,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                     ],
                                 ]
                             )
-                                ?>
+                            ?>
                         </div>
                     <?php endforeach; ?>
                 </div>

@@ -1,4 +1,5 @@
 <?php
+
 // Exam Engine Main Layout
 use yii\helpers\Html;
 use yii\helpers\Url;
@@ -244,7 +245,7 @@ $remainingSeconds = max(0, $totalSeconds - $elapsed);
             <div class="sidebar">
                 <h6 class="text-uppercase text-muted fw-bold mb-3 small tracking-wide">SAVOLLAR PANELI</h6>
                 <div class="q-grid" id="q-nav-grid">
-                    <?php foreach ($answers as $index => $answer):
+                    <?php foreach ($answers as $index => $answer) :
                         $num = $index + 1;
                         $class = $answer->selected_option_id ? 'answered' : '';
                         $active = $index === 0 ? 'active' : '';
@@ -269,7 +270,7 @@ $remainingSeconds = max(0, $totalSeconds - $elapsed);
 
             <!-- Question Forms Area -->
             <div class="content-area">
-                <?php foreach ($answers as $index => $answer):
+                <?php foreach ($answers as $index => $answer) :
                     $num = $index + 1;
                     $q = $answer->question;
                     $options = $q->getShuffledOptions(); // Randomize display logically via Model
@@ -289,7 +290,7 @@ $remainingSeconds = max(0, $totalSeconds - $elapsed);
 
                         <div class="options-container">
                             <?php $letters = ['A', 'B', 'C', 'D']; ?>
-                            <?php foreach ($options as $optIndex => $option):
+                            <?php foreach ($options as $optIndex => $option) :
                                 $isSelected = $answer->selected_option_id == $option->id ? 'selected' : '';
                                 ?>
                                 <div class="option-card <?= $isSelected ?>" data-q-id="<?= $q->id ?>"

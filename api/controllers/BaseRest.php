@@ -22,8 +22,9 @@ class BaseRest extends Controller
             if ($authHeader && preg_match('/^Bearer\s+(.*?)$/', $authHeader, $matches)) {
                 $token = $matches[1];
                 $this->user = JwtAuth::validateToken($token);
-                if ($this->user)
+                if ($this->user) {
                     return true;
+                }
             }
             throw new UnauthorizedHttpException('Token yaroqsiz yoki muddati o\'tgan');
         }

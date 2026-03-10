@@ -30,25 +30,25 @@ $this->params['breadcrumbs'][] = $this->title;
                         'format' => 'raw',
                         'value' => function ($model) {
                                         return Html::a('<b>#' . $model->contract_number . '</b>', ['/student/view', 'id' => $model->student_id, '#' => 'contract'], ['class' => 'text-decoration-none text-primary']);
-                                    }
+                        }
                     ],
                     [
                         'label' => 'Abiturient',
                         'value' => function ($model) {
                                         return $model->student->getFullName();
-                                    }
+                        }
                     ],
                     [
                         'label' => 'Yo\'nalish',
                         'value' => function ($model) {
                                         return $model->student->direction->name_uz ?? '-';
-                                    }
+                        }
                     ],
                     [
                         'attribute' => 'contract_amount',
                         'value' => function ($model) {
                                         return number_format($model->contract_amount, 0, '', ' ') . ' UZS';
-                                    }
+                        }
                     ],
                     [
                         'attribute' => 'payment_amount',
@@ -62,24 +62,24 @@ $this->params['breadcrumbs'][] = $this->title;
                                         $html .= '<span class="badge bg-' . $color . '">' . $percent . '%</span>';
                                         $html .= '</div>';
                                         return $html;
-                                    }
+                        }
                     ],
                     [
                         'attribute' => 'payment_status',
                         'format' => 'raw',
                         'value' => function ($model) {
-                                        switch ($model->payment_status) {
-                                            case StudentOferta::PAYMENT_PENDING:
-                                                return '<span class="badge bg-secondary">Kutilmoqda</span>';
-                                            case StudentOferta::PAYMENT_PARTIAL:
-                                                return '<span class="badge bg-warning text-dark">Qisman to\'landi</span>';
-                                            case StudentOferta::PAYMENT_PAID:
-                                                return '<span class="badge bg-success">To\'liq to\'landi</span>';
-                                            case StudentOferta::PAYMENT_CANCELLED:
-                                                return '<span class="badge bg-danger">Bekor qilindi</span>';
-                                        }
+                            switch ($model->payment_status) {
+                                case StudentOferta::PAYMENT_PENDING:
+                                    return '<span class="badge bg-secondary">Kutilmoqda</span>';
+                                case StudentOferta::PAYMENT_PARTIAL:
+                                    return '<span class="badge bg-warning text-dark">Qisman to\'landi</span>';
+                                case StudentOferta::PAYMENT_PAID:
+                                    return '<span class="badge bg-success">To\'liq to\'landi</span>';
+                                case StudentOferta::PAYMENT_CANCELLED:
+                                    return '<span class="badge bg-danger">Bekor qilindi</span>';
+                            }
                                         return '-';
-                                    }
+                        }
                     ],
                     [
                         'class' => 'yii\grid\ActionColumn',
@@ -87,10 +87,10 @@ $this->params['breadcrumbs'][] = $this->title;
                         'buttons' => [
                             'pdf' => function ($url, $model, $key) {
                                             return Html::a('<i class="bi bi-file-pdf text-danger bg-light p-1 rounded"></i>', ['download-pdf', 'id' => $model->id], ['class' => 'btn btn-sm text-decoration-none', 'title' => 'PDF Yuklab olish', 'data-pjax' => 0]);
-                                        },
+                            },
                             'pay' => function ($url, $model, $key) {
                                             return Html::a('<i class="bi bi-credit-card text-success bg-light p-1 rounded"></i>', ['/student/view', 'id' => $model->student_id, '#' => 'contract'], ['class' => 'btn btn-sm text-decoration-none', 'title' => 'To\'lov kiritish']);
-                                        },
+                            },
                         ]
                     ],
                 ],

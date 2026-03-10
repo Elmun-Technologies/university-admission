@@ -17,7 +17,7 @@ class PinflValidator extends Validator
 
         // Uzbekistan PINFL checksum logic
         // Research-based simplified: Typically specific digits have meanings (birthdate, region)
-        // A common check is just length and digit validation in many production apps, 
+        // A common check is just length and digit validation in many production apps,
         // but let's implement a standard sum check if applicable.
         // For this project, we'll ensure it's not all zeros or too simple.
 

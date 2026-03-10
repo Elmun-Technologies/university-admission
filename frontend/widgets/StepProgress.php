@@ -7,7 +7,7 @@ use yii\bootstrap5\Widget;
 use yii\helpers\Html;
 
 /**
- * StepProgress renders a visual stepper based on predefined stages 
+ * StepProgress renders a visual stepper based on predefined stages
  * mapped closely to Student::STATUS_* progression
  */
 class StepProgress extends Widget

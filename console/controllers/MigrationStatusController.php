@@ -17,7 +17,7 @@ class MigrationStatusController extends Controller
     public function actionIndex()
     {
         $this->stdout("--- 📜 Migration Status ---\n", Console::FG_CYAN);
-        
+
         $migrations = (new \yii\db\Query())
             ->from('{{%migration}}')
             ->orderBy(['apply_time' => SORT_DESC])
@@ -28,7 +28,7 @@ class MigrationStatusController extends Controller
             $date = date('Y-m-d H:i:s', $m['apply_time']);
             $this->stdout("[$date] {$m['version']}\n");
         }
-        
+
         $this->stdout("\nRun 'php yii migrate/history' for full history.\n");
     }
 

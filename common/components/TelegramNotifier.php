@@ -13,8 +13,8 @@ class TelegramNotifier
     /**
      * Determine if branch has active bot and dispatch text
      *
-     * @param int $branchId 
-     * @param string $message 
+     * @param int $branchId
+     * @param string $message
      * @param string $type E.g. 'notify_new_student', 'notify_payment' mapped to DB columns
      * @return bool
      */

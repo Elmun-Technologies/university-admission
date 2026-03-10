@@ -13,7 +13,7 @@ class AuditLogger extends Component
 {
     /**
      * Records an audit log entry
-     * 
+     *
      * @param string $action e.g. 'student.status_changed'
      * @param string $entityType e.g. 'student'
      * @param int $entityId

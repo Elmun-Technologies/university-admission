@@ -32,32 +32,32 @@ $this->params['breadcrumbs'][] = $this->title;
                         'value' => function ($model) {
                                         return Html::a(Html::encode($model->name_uz), ['update', 'id' => $model->id], ['class' => 'fw-bold text-dark text-decoration-none d-block']) .
                                             Html::tag('small', Html::encode($model->name_ru), ['class' => 'text-muted']);
-                                    }
+                        }
                     ],
                     [
                         'attribute' => 'tuition_fee',
                         'label' => 'Kontrakt',
                         'value' => function ($model) {
                                         return number_format($model->tuition_fee, 0, '', ' ') . ' UZS';
-                                    }
+                        }
                     ],
                     [
                         'attribute' => 'duration_years',
                         'label' => 'Davomiyligi',
                         'value' => function ($model) {
                                         return $model->duration_years . ' yil';
-                                    }
+                        }
                     ],
                     [
                         'label' => 'Ta\'lim shakllari',
                         'format' => 'raw',
                         'value' => function ($model) {
                                         $str = '';
-                                        foreach ($model->eduForms as $form) {
-                                            $str .= '<span class="badge bg-light text-dark border me-1">' . $form->name_uz . '</span>';
-                                        }
+                            foreach ($model->eduForms as $form) {
+                                $str .= '<span class="badge bg-light text-dark border me-1">' . $form->name_uz . '</span>';
+                            }
                                         return $str ?: '<span class="text-muted small">Kiritilmagan</span>';
-                                    }
+                        }
                     ],
                     [
                         'attribute' => 'status',
@@ -67,7 +67,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                         return '<div class="form-check form-switch ms-3">
                                       <input class="form-check-input status-toggle" type="checkbox" role="switch" data-id="' . $model->id . '" ' . $checked . ' style="cursor:pointer; transform: scale(1.2);">
                                     </div>';
-                                    }
+                        }
                     ],
                     [
                         'class' => 'yii\grid\ActionColumn',
@@ -75,13 +75,13 @@ $this->params['breadcrumbs'][] = $this->title;
                         'buttons' => [
                             'update' => function ($url, $model, $key) {
                                             return Html::a('<i class="bi bi-pencil"></i>', $url, ['class' => 'btn btn-sm btn-light border me-1 text-primary']);
-                                        },
+                            },
                             'delete' => function ($url, $model, $key) {
                                             return Html::a('<i class="bi bi-trash"></i>', $url, [
                                                 'class' => 'btn btn-sm btn-light border text-danger',
                                                 'data' => ['confirm' => 'Haqiqatan ham o\'chirasizmi?', 'method' => 'post']
                                             ]);
-                                        },
+                            },
                         ]
                     ],
                 ],

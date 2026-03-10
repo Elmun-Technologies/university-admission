@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'value' => function ($model) {
                                         return Html::a('<b>' . Html::encode($model->name) . '</b>', ['update', 'id' => $model->id], ['class' => 'text-decoration-none text-primary d-block']) .
                                             Html::tag('small', 'Tel: ' . Html::encode($model->phone ?? '-'), ['class' => 'text-muted']);
-                                    }
+                        }
                     ],
                     'contact_person',
                     [
@@ -37,7 +37,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'value' => function ($model) {
                                         $count = $model->getStudents()->count();
                                         return '<span class="badge bg-light text-dark border">' . $count . ' ta</span>';
-                                    }
+                        }
                     ],
                     [
                         'label' => 'Muvaffaqiyatli',
@@ -46,14 +46,14 @@ $this->params['breadcrumbs'][] = $this->title;
                                         $count = clone clone $model->getStudents();
                                         $count = $count->where(['>=', 'status', \common\models\Student::STATUS_CONTRACT_SIGNED])->count();
                                         return '<span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25">' . $count . ' ta</span>';
-                                    }
+                        }
                     ],
                     [
                         'attribute' => 'status',
                         'format' => 'raw',
                         'value' => function ($model) {
                                         return $model->status == 1 ? '<span class="badge bg-success">Faol</span>' : '<span class="badge bg-secondary">Nofaol</span>';
-                                    }
+                        }
                     ],
                     [
                         'class' => 'yii\grid\ActionColumn',
@@ -61,13 +61,13 @@ $this->params['breadcrumbs'][] = $this->title;
                         'buttons' => [
                             'update' => function ($url, $model, $key) {
                                             return Html::a('<i class="bi bi-pencil"></i>', $url, ['class' => 'btn btn-sm btn-light border text-primary me-1']);
-                                        },
+                            },
                             'delete' => function ($url, $model, $key) {
                                             return Html::a('<i class="bi bi-trash"></i>', $url, [
                                                 'class' => 'btn btn-sm btn-light border text-danger',
                                                 'data' => ['confirm' => 'O\'chirmoqchimisiz?', 'method' => 'post']
                                             ]);
-                                        },
+                            },
                         ]
                     ],
                 ],

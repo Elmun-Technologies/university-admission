@@ -4,6 +4,7 @@ namespace frontend\controllers;
 
 use common\models\Student;
 use common\models\Direction;
+use common\models\StudentNotificationPref;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -102,7 +103,6 @@ class ProfileController extends Controller
         $model = $this->findStudentModel();
 
         if ($model->load(Yii::$app->request->post())) {
-
             // Format strictly for DB saves
             $model->passport_series = strtoupper(trim($model->passport_series));
 
@@ -192,9 +192,9 @@ class ProfileController extends Controller
 
         // Create canvas
         $src = null;
-        if ($type == IMAGETYPE_JPEG)
+        if ($type == IMAGETYPE_JPEG) {
             $src = imagecreatefromjpeg($file);
-        elseif ($type == IMAGETYPE_PNG) {
+        } elseif ($type == IMAGETYPE_PNG) {
             $src = imagecreatefrompng($file);
             imagepalettetotruecolor($src);
         }
@@ -206,5 +206,53 @@ class ProfileController extends Controller
             imagedestroy($src);
             imagedestroy($dst);
         }
+    }
+
+    /**
+     * Step 5 (Optional): Notification Preferences
+     */
+    public function actionNotifications()
+    {
+        $student = $this->findStudentModel();
+
+        // Find or create notification preferences
+        $prefs = StudentNotificationPref::find()->where(['student_id' => $student->id])->all();
+        $prefMap = [];
+        foreach ($prefs as $p) {
+            $prefMap[$p->type] = $p;
+        }
+
+        $types = ['sms', 'telegram', 'email'];
+        foreach ($types as $type) {
+            if (!isset($prefMap[$type])) {
+                $p = new StudentNotificationPref();
+                $p->student_id = $student->id;
+                $p->type = $type;
+                $p->is_enabled = 1;
+                if ($type === 'telegram') {
+                    // Generate a 4-digit code for Telegram linking
+                    $p->telegram_code = str_pad(rand(0, 9999), 4, '0', STR_PAD_LEFT);
+                }
+                $p->save();
+                $prefMap[$type] = $p;
+            }
+        }
+
+        if (Yii::$app->request->isPost) {
+            $post = Yii::$app->request->post('Notifications', []);
+            foreach ($types as $type) {
+                if (isset($prefMap[$type])) {
+                    $prefMap[$type]->is_enabled = isset($post[$type]) && $post[$type] == 1 ? 1 : 0;
+                    $prefMap[$type]->save(false);
+                }
+            }
+            Yii::$app->session->setFlash('success', Yii::t('app', 'Sozlamalar saqlandi. / Настройки сохранены.'));
+            return $this->refresh();
+        }
+
+        return $this->render('notifications', [
+            'student' => $student,
+            'prefMap' => $prefMap,
+        ]);
     }
 }

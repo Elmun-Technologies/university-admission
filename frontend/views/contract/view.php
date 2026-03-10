@@ -67,7 +67,7 @@ $isSigned = !empty($oferta->signed_at);
                 </div>
             </div>
 
-            <?php if ($isSigned): ?>
+            <?php if ($isSigned) : ?>
                 <div class="alert alert-success d-flex align-items-center mb-0">
                     <i class="bi bi-shield-check fs-2 me-3"></i>
                     <div>
@@ -88,7 +88,7 @@ $isSigned = !empty($oferta->signed_at);
                         class="btn btn-primary btn-lg rounded-pill px-5 shadow">To'lov sahifasiga o'tish <i
                             class="bi bi-arrow-right"></i></a>
                 </div>
-            <?php else: ?>
+            <?php else : ?>
                 <?php $form = ActiveForm::begin(['action' => ['sign']]); ?>
                 <div class="bg-primary bg-opacity-10 border border-primary p-4 rounded mb-4">
                     <div class="form-check custom-checkbox">
@@ -114,7 +114,7 @@ $isSigned = !empty($oferta->signed_at);
     </div>
 </div>
 
-<?php if (!$isSigned): ?>
+<?php if (!$isSigned) : ?>
     <?php $this->registerJs("
     document.getElementById('agreeCheckbox').addEventListener('change', function() {
         document.getElementById('signButton').disabled = !this.checked;

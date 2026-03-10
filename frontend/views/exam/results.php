@@ -8,10 +8,10 @@ $this->title = Yii::t('app', 'Imtihon Natijasi');
 
 <div class="exam-results text-center py-5">
 
-    <?php if ($attempt->is_passed): ?>
+    <?php if ($attempt->is_passed) : ?>
         <div class="display-1 text-success mb-3"><i class="bi bi-check-circle-fill"></i></div>
         <h2 class="text-success fw-bold">Tabriklaymiz, siz imtihondan o'tdingiz!</h2>
-    <?php else: ?>
+    <?php else : ?>
         <div class="display-1 text-danger mb-3"><i class="bi bi-x-circle-fill"></i></div>
         <h2 class="text-danger fw-bold">Afsuski, yetarli bal to'play olmadingiz.</h2>
     <?php endif; ?>

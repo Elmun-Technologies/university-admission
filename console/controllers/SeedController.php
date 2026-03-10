@@ -29,8 +29,9 @@ class SeedController extends Controller
 
         for ($i = 0; $i < $count; $i++) {
             StudentFactory::create();
-            if ($i % 10 == 0)
+            if ($i % 10 == 0) {
                 $this->stdout(".");
+            }
         }
 
         $this->stdout("\nDone!\n", Console::FG_GREEN);

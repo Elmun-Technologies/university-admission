@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                         $name = $model->employee ? $model->employee->first_name . ' ' . $model->employee->last_name : '-';
                                         return Html::a('<b>' . $model->username . '</b>', ['update', 'id' => $model->id], ['class' => 'text-decoration-none text-dark d-block']) .
                                             Html::tag('small', $name, ['class' => 'text-muted']);
-                                    }
+                        }
                     ],
                     'email:email',
                     [
@@ -39,18 +39,18 @@ $this->params['breadcrumbs'][] = $this->title;
                         'value' => function ($model) {
                                         $roles = Yii::$app->authManager->getRolesByUser($model->id);
                                         $str = '';
-                                        foreach ($roles as $role) {
-                                            $color = $role->name == 'superAdmin' ? 'danger' : 'primary';
-                                            $str .= '<span class="badge bg-' . $color . ' me-1">' . $role->description . '</span>';
-                                        }
+                            foreach ($roles as $role) {
+                                $color = $role->name == 'superAdmin' ? 'danger' : 'primary';
+                                $str .= '<span class="badge bg-' . $color . ' me-1">' . $role->description . '</span>';
+                            }
                                         return $str ?: '<span class="badge bg-secondary">Biriktirilmagan</span>';
-                                    }
+                        }
                     ],
                     [
                         'label' => 'Filial',
                         'value' => function ($model) {
                                         return $model->branch ? $model->branch->name_uz : 'Barcha (Global)';
-                                    }
+                        }
                     ],
                     [
                         'attribute' => 'status',
@@ -59,7 +59,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                         return $model->status == User::STATUS_ACTIVE ?
                                             '<span class="badge bg-success"><i class="bi bi-check-circle"></i> Faol</span>' :
                                             '<span class="badge bg-danger">Bloklangan</span>';
-                                    }
+                        }
                     ],
                     [
                         'class' => 'yii\grid\ActionColumn',
@@ -67,15 +67,16 @@ $this->params['breadcrumbs'][] = $this->title;
                         'buttons' => [
                             'update' => function ($url, $model, $key) {
                                             return Html::a('<i class="bi bi-pencil"></i>', $url, ['class' => 'btn btn-sm btn-light border text-primary me-1']);
-                                        },
+                            },
                             'delete' => function ($url, $model, $key) {
-                                            if ($model->id === 1)
-                                                return '';
+                                if ($model->id === 1) {
+                                    return '';
+                                }
                                             return Html::a('<i class="bi bi-trash"></i>', $url, [
                                                 'class' => 'btn btn-sm btn-light border text-danger',
                                                 'data' => ['confirm' => 'O\'chirmoqchimisiz?', 'method' => 'post']
                                             ]);
-                                        },
+                            },
                         ]
                     ],
                 ],

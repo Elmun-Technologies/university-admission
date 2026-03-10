@@ -34,14 +34,14 @@ $this->params['breadcrumbs'][] = $this->title;
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach($consultingStats as $cs): ?>
+                        <?php foreach ($consultingStats as $cs) : ?>
                         <tr>
                             <td class="fw-bold"><?= Html::encode($cs['name']) ?></td>
                             <td class="text-center"><span class="badge bg-primary rounded-pill"><?= $cs['total_students'] ?></span></td>
                             <td class="text-end fw-bold text-success"><?= number_format($cs['total_commission'], 0, '', ' ') ?> UZS</td>
                         </tr>
                         <?php endforeach; ?>
-                        <?php if(empty($consultingStats)): ?>
+                        <?php if (empty($consultingStats)) : ?>
                             <tr><td colspan="3" class="text-center text-muted py-4">Ma'lumot topilmadi</td></tr>
                         <?php endif; ?>
                     </tbody>
@@ -57,7 +57,7 @@ $this->registerJsFile('https://cdn.jsdelivr.net/npm/chart.js', ['position' => \y
 
 $pieLabels = [];
 $pieData = [];
-foreach($directionPie as $dp) {
+foreach ($directionPie as $dp) {
     $pieLabels[] = $dp['name_uz'];
     $pieData[] = $dp['cnt'];
 }

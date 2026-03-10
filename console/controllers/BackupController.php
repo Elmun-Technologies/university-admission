@@ -122,8 +122,9 @@ class BackupController extends Controller
         $result = [];
         foreach ($params as $param) {
             $kv = explode('=', $param);
-            if (isset($kv[1]))
+            if (isset($kv[1])) {
                 $result[$kv[0]] = $kv[1];
+            }
         }
         return $result;
     }

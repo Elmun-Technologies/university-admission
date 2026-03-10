@@ -1,5 +1,7 @@
 <?php
+
 use yii\helpers\Html;
+
 ?>
 <!-- Import Modal Native Scaffold -->
 <div class="modal fade" id="importModal" tabindex="-1" aria-hidden="true">

@@ -1,6 +1,8 @@
 <?php
+
 /** @var $data array Flattened data prepared by Model */
 use yii\helpers\Html;
+
 ?>
 <!DOCTYPE html>
 <html lang="uz">

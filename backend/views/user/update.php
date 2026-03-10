@@ -49,8 +49,9 @@ $branches = ArrayHelper::map(Branch::find()->all(), 'id', 'name_uz');
                         <div class="col-md-6 mt-4">
                             <?php
                             $passOptions = ['class' => 'form-control border-2'];
-                            if (!$model->isNewRecord())
+                            if (!$model->isNewRecord()) {
                                 $passOptions['placeholder'] = 'O\'zgartirish uchun yangi parol kiriting';
+                            }
                             echo $form->field($model, 'password')->passwordInput($passOptions);
                             ?>
                         </div>

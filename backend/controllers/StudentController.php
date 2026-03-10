@@ -164,6 +164,39 @@ class StudentController extends Controller
         return Yii::$app->response->sendFile($filePath, 'Abiturientlar_' . date('Y-m-d') . '.xlsx');
     }
 
+    /**
+     * Aggregated Statistics Dashboard
+     */
+    public function actionStats()
+    {
+        // Simple distinct count grouped by direction and status
+        $stats = (new \yii\db\Query())
+            ->select(['direction_id', 'status', 'COUNT(*) as count'])
+            ->from('{{%student}}')
+            ->groupBy(['direction_id', 'status'])
+            ->all();
+
+        // Organize nicely for the view
+        $directions = \common\models\Direction::find()->all();
+        $dirMap = \yii\helpers\ArrayHelper::map($directions, 'id', 'name_uz');
+
+        $organized = [];
+        foreach ($stats as $row) {
+            $dirId = $row['direction_id'];
+            $status = $row['status'];
+            if (!isset($organized[$dirId])) {
+                $organized[$dirId] = [];
+            }
+            $organized[$dirId][$status] = (int)$row['count'];
+        }
+
+        return $this->render('stats', [
+            'organized' => $organized,
+            'dirMap' => $dirMap,
+            'statuses' => Student::getStatusList()
+        ]);
+    }
+
     protected function findModel($id)
     {
         if (($model = Student::findOne($id)) !== null) {

@@ -17,12 +17,12 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="card shadow-sm border-0 mb-4">
         <div class="card-header bg-white border-bottom py-3 d-flex justify-content-between align-items-center">
             <h5 class="mb-0 fw-bold"><i class="bi bi-people text-primary me-2"></i>Abiturientlar Boshqaruvi</h5>
-            <div>
                 <?= Html::a(
                     '<i class="bi bi-file-earmark-excel me-1"></i> Export (Excel)',
                     array_merge(['export'], Yii::$app->request->queryParams),
                     ['class' => 'btn btn-outline-success btn-sm me-2', 'data-pjax' => 0]
                 ) ?>
+                <?= Html::a('<i class="bi bi-bar-chart-fill me-1"></i> Statistika', ['stats'], ['class' => 'btn btn-outline-info btn-sm me-2']) ?>
                 <?= Html::a('<i class="bi bi-plus-lg"></i> Yangi qoshish', ['create'], ['class' => 'btn btn-primary btn-sm']) ?>
             </div>
         </div>
@@ -45,17 +45,17 @@ $this->params['breadcrumbs'][] = $this->title;
                         'format' => 'raw',
                         'filter' => false,
                         'value' => function ($model) {
-                        $url = $model->photo ? Yii::getAlias('@web/uploads/photos/') . $model->photo : 'https://ui-avatars.com/api/?name=' . urlencode($model->getFullName());
-                        return Html::img($url, ['class' => 'rounded-circle shadow-sm', 'style' => 'width: 40px; height: 40px; object-fit: cover;']);
-                    }
+                            $url = $model->photo ? Yii::getAlias('@web/uploads/photos/') . $model->photo : 'https://ui-avatars.com/api/?name=' . urlencode($model->getFullName());
+                            return Html::img($url, ['class' => 'rounded-circle shadow-sm', 'style' => 'width: 40px; height: 40px; object-fit: cover;']);
+                        }
                     ],
                     [
                         'attribute' => 'first_name',
                         'label' => 'F.I.SH',
                         'format' => 'raw',
                         'value' => function ($model) {
-                        return Html::a(Html::encode($model->getFullName()), ['view', 'id' => $model->id], ['class' => 'text-dark fw-bold text-decoration-none']);
-                    }
+                            return Html::a(Html::encode($model->getFullName()), ['view', 'id' => $model->id], ['class' => 'text-dark fw-bold text-decoration-none']);
+                        }
                     ],
                     'phone',
                     [
@@ -79,28 +79,28 @@ $this->params['breadcrumbs'][] = $this->title;
                             Student::STATUS_PAID => 'To\'ladi'
                         ],
                         'value' => function ($model) {
-                        return \frontend\widgets\StatusBadge::widget(['status' => $model->status, 'label' => $model->getStatusLabel()]);
-                    }
+                            return \frontend\widgets\StatusBadge::widget(['status' => $model->status, 'label' => $model->getStatusLabel()]);
+                        }
                     ],
                     [
                         'label' => 'Bali',
                         'value' => function ($model) {
-                        $ex = $model->getStudentExams()->one();
-                        return $ex ? $ex->score . '%' : '-';
-                    }
+                            $ex = $model->getStudentExams()->one();
+                            return $ex ? $ex->score . '%' : '-';
+                        }
                     ],
                     [
                         'class' => 'yii\grid\ActionColumn',
                         'template' => '{view} {update} {status} {delete}',
                         'buttons' => [
                             'status' => function ($url, $model, $key) {
-                            return Html::a('<i class="bi bi-arrow-left-right text-warning"></i>', '#', [
+                                return Html::a('<i class="bi bi-arrow-left-right text-warning"></i>', '#', [
                                 'class' => 'btn btn-sm btn-light border status-btn ms-1',
                                 'title' => 'Holatni o\'zgartirish',
                                 'data-id' => $model->id,
                                 'data-current' => $model->status
-                            ]);
-                        },
+                                ]);
+                            },
                         ]
                     ],
                 ],

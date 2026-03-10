@@ -100,11 +100,10 @@ class DirectionController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-
             // Handle relations natively (Forms, Types, Subjects arrays submitted via Tabbed form)
             $post = Yii::$app->request->post();
 
-            // Logic mapping pivot tables would conventionally execute here 
+            // Logic mapping pivot tables would conventionally execute here
             // array_map() insert mechanisms for EduForms and Subject orderings.
             // Simplified for layout scaffold:
 

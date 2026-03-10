@@ -108,8 +108,8 @@ $m = $metrics['today'];
                 $labels = ['Yangi Arizalar', 'Anketa To\'liq', 'Imtihon belgilandi', 'Imtihondan o\'tdi', 'Shartnoma tuzildi', 'To\'lov qildi'];
                 $colors = ['bg-secondary', 'bg-info', 'bg-primary', 'bg-success', 'bg-warning', 'bg-success'];
                 $maxItems = max(max($metrics['funnel']), 1); // prevent / 0
-                
-                foreach ($metrics['funnel'] as $idx => $val):
+
+                foreach ($metrics['funnel'] as $idx => $val) :
                     $pct = ($val / $maxItems) * 100;
                     $class = $colors[$idx] ?? 'bg-primary';
                     ?>
@@ -150,12 +150,12 @@ $m = $metrics['today'];
                         </tr>
                     </thead>
                     <tbody>
-                        <?php if (empty($metrics['upcomingExams'])): ?>
+                        <?php if (empty($metrics['upcomingExams'])) : ?>
                             <tr>
                                 <td colspan="4" class="text-center text-muted py-4">Rejalashtirilgan imtihonlar yo'q</td>
                             </tr>
-                        <?php else: ?>
-                            <?php foreach ($metrics['upcomingExams'] as $ed): ?>
+                        <?php else : ?>
+                            <?php foreach ($metrics['upcomingExams'] as $ed) : ?>
                                 <tr>
                                     <td>
                                         <div class="fw-bold text-dark">
@@ -191,7 +191,7 @@ $m = $metrics['today'];
             </div>
             <div class="card-body p-0">
                 <div class="list-group list-group-flush">
-                    <?php foreach ($metrics['recentActivities'] as $act): ?>
+                    <?php foreach ($metrics['recentActivities'] as $act) : ?>
                         <div class="list-group-item py-3">
                             <div class="d-flex w-100 justify-content-between align-items-center mb-1">
                                 <h6 class="mb-0 small fw-bold">

@@ -185,56 +185,56 @@ $branchName = $user ? ($user->branch->name_uz ?? 'Boshqarv Markazi') : 'Tizim';
                         Dashboard</a>
                 </li>
 
-                <?php if (Yii::$app->user->can('viewStudent') || Yii::$app->user->id === 1): // Failsafe SuperAdmin ID 1 check ?>
+                <?php if (Yii::$app->user->can('viewStudent') || Yii::$app->user->id === 1) : // Failsafe SuperAdmin ID 1 check ?>
                     <li class="<?= Yii::$app->controller->id == 'student' ? 'active' : '' ?>">
                         <a href="<?= \yii\helpers\Url::to(['/student/index']) ?>"><i class="bi bi-people"></i> Talabalar
                             (Students)</a>
                     </li>
                 <?php endif; ?>
 
-                <?php if (Yii::$app->user->can('manageDirection') || Yii::$app->user->id === 1): ?>
+                <?php if (Yii::$app->user->can('manageDirection') || Yii::$app->user->id === 1) : ?>
                     <li class="<?= Yii::$app->controller->id == 'direction' ? 'active' : '' ?>">
                         <a href="<?= \yii\helpers\Url::to(['/direction/index']) ?>"><i class="bi bi-journal-bookmark"></i>
                             Yo'nalishlar (Directions)</a>
                     </li>
                 <?php endif; ?>
 
-                <?php if (Yii::$app->user->can('manageExam') || Yii::$app->user->id === 1): ?>
+                <?php if (Yii::$app->user->can('manageExam') || Yii::$app->user->id === 1) : ?>
                     <li class="<?= Yii::$app->controller->id == 'exam' ? 'active' : '' ?>">
                         <a href="<?= \yii\helpers\Url::to(['/exam/index']) ?>"><i class="bi bi-calendar-check"></i>
                             Imtihonlar (Exams)</a>
                     </li>
                 <?php endif; ?>
 
-                <?php if (Yii::$app->user->can('viewContract') || Yii::$app->user->id === 1): ?>
+                <?php if (Yii::$app->user->can('viewContract') || Yii::$app->user->id === 1) : ?>
                     <li class="<?= Yii::$app->controller->id == 'contract' ? 'active' : '' ?>">
                         <a href="<?= \yii\helpers\Url::to(['/contract/index']) ?>"><i class="bi bi-file-earmark-text"></i>
                             Shartnomalar (Contracts)</a>
                     </li>
                 <?php endif; ?>
 
-                <?php if (Yii::$app->user->can('managePayment') || Yii::$app->user->id === 1): ?>
+                <?php if (Yii::$app->user->can('managePayment') || Yii::$app->user->id === 1) : ?>
                     <li class="<?= Yii::$app->controller->id == 'payment' ? 'active' : '' ?>">
                         <a href="<?= \yii\helpers\Url::to(['/payment/index']) ?>"><i class="bi bi-wallet2"></i> To'lovlar
                             (Payments)</a>
                     </li>
                 <?php endif; ?>
 
-                <?php if (Yii::$app->user->can('manageConsulting') || Yii::$app->user->id === 1): ?>
+                <?php if (Yii::$app->user->can('manageConsulting') || Yii::$app->user->id === 1) : ?>
                     <li class="<?= Yii::$app->controller->id == 'consulting' ? 'active' : '' ?>">
                         <a href="<?= \yii\helpers\Url::to(['/consulting/index']) ?>"><i class="bi bi-building"></i>
                             Konsalting (Agencies)</a>
                     </li>
                 <?php endif; ?>
 
-                <?php if (Yii::$app->user->can('viewReport') || Yii::$app->user->id === 1): ?>
+                <?php if (Yii::$app->user->can('viewReport') || Yii::$app->user->id === 1) : ?>
                     <li class="<?= Yii::$app->controller->id == 'report' ? 'active' : '' ?>">
                         <a href="<?= \yii\helpers\Url::to(['/report/dashboard']) ?>"><i class="bi bi-graph-up"></i>
                             Hisobotlar (Reports)</a>
                     </li>
                 <?php endif; ?>
 
-                <?php if (Yii::$app->user->can('superAdmin') || Yii::$app->user->id === 1): ?>
+                <?php if (Yii::$app->user->can('superAdmin') || Yii::$app->user->id === 1) : ?>
                     <li
                         class="<?= Yii::$app->controller->id == 'settings' ? 'active' : '' ?> mt-4 border-top pt-3 border-secondary">
                         <a href="<?= \yii\helpers\Url::to(['/settings/university']) ?>"><i class="bi bi-gear"></i>

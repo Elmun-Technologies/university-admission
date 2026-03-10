@@ -27,8 +27,9 @@ class InitialDataImporter extends Component
         $transaction = Yii::$app->db->beginTransaction();
         try {
             foreach ($rows as $index => $row) {
-                if ($index === 0)
+                if ($index === 0) {
                     continue; // Skip header
+                }
 
                 $model = new Direction();
                 $model->name_uz = $row[0] ?? '';
@@ -58,8 +59,9 @@ class InitialDataImporter extends Component
         $rows = $sheet->toArray();
 
         foreach ($rows as $index => $row) {
-            if ($index === 0)
+            if ($index === 0) {
                 continue;
+            }
 
             $q = new Question();
             $q->subject_id = $subjectId;

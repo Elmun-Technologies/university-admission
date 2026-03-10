@@ -17,8 +17,9 @@ class TelegramNotifyJob extends BaseObject implements JobInterface
     public function execute($queue)
     {
         $branch = \common\models\Branch::findOne($this->branchId);
-        if (!$branch)
+        if (!$branch) {
             return;
+        }
 
         $configs = json_decode($branch->config_data ?? '{}', true);
         $token = $configs['telegram_bot_token'] ?? null;

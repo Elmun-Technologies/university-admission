@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "8b9cad0e-1f20-4192-bff0-e1e043ce4ad8",
+		"name": "University Admission System",
+		"description": "Core API Collection for Applicant Mobile App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "+998901234567",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/auth/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "Get Profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwtToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/student/profile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"student",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8032/v1",
+			"type": "string"
+		},
+		{
+			"key": "jwtToken",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

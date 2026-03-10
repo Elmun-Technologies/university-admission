@@ -105,7 +105,7 @@ class ContractController extends Controller
             }
         }
 
-        // Bounce back strictly to the Student Profile UI Context 
+        // Bounce back strictly to the Student Profile UI Context
         return $this->redirect(['/student/view', 'id' => $model->student_id, '#' => 'contract']);
     }
 

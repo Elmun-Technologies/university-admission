@@ -51,7 +51,7 @@ $dirJson = json_encode($dirData);
                     <h5 class="text-primary mb-3">Mavjud yo'nalishlar</h5>
 
                     <div class="row g-3" id="directions-grid">
-                        <?php foreach ($directions as $dir): ?>
+                        <?php foreach ($directions as $dir) : ?>
                             <div class="col-md-6 direction-card-wrapper" data-id="<?= $dir->id ?>">
                                 <div class="card h-100 border direction-card cursor-pointer"
                                     style="cursor: pointer; transition: 0.2s;">

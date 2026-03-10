@@ -166,12 +166,12 @@ $logoUrl = $branch->getLogoUrl() ?? Yii::getAlias('@web/images/logo.png'); // Fa
                 <?= htmlspecialchars($student->pinfl) ?><br>
                 <br>
                 <b>Raqamli Tarzda Tasdiqlangan</b><br>
-                <?php if ($oferta->signed_at): ?>
+                <?php if ($oferta->signed_at) : ?>
                     <span style="border: 1px solid #28a745; color: #28a745; padding: 2px 5px; font-weight: bold;">
                         Tasdiqlandi:
                         <?= date('d.m.Y H:i:s', $oferta->signed_at) ?>
                     </span>
-                <?php else: ?>
+                <?php else : ?>
                     Imzolanmagan
                 <?php endif; ?>
             </td>

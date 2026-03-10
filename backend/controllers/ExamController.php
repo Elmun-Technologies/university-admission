@@ -53,8 +53,9 @@ class ExamController extends Controller
     public function actionSchedule($examId)
     {
         $exam = Exam::findOne($examId);
-        if (!$exam)
+        if (!$exam) {
             throw new \yii\web\NotFoundHttpException("Imtihon topilmadi");
+        }
 
         // Handle quick schedule creation
         if (Yii::$app->request->isPost) {

@@ -32,8 +32,9 @@ class ContractController extends Controller
     protected function findStudentModel()
     {
         $student = Student::findOne(['created_by' => Yii::$app->user->id]);
-        if (!$student)
+        if (!$student) {
             throw new NotFoundHttpException('Profile not found.');
+        }
         return $student;
     }
 

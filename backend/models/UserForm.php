@@ -172,7 +172,6 @@ class UserForm extends Model
 
             $transaction->commit();
             return true;
-
         } catch (\Exception $e) {
             $transaction->rollBack();
             Yii::$app->session->setFlash('error', $e->getMessage());

@@ -17,7 +17,7 @@ $isPaid = $oferta && $oferta->payment_status == \common\models\StudentOferta::PA
                 <?= Html::encode($this->title) ?>
             </h4>
 
-            <?php if ($isPaid): ?>
+            <?php if ($isPaid) : ?>
                 <div class="text-center py-5">
                     <div class="display-1 text-success mb-3"><i class="bi bi-check-circle-fill"></i></div>
                     <h2 class="text-success fw-bold">To'lov muvaffaqiyatli amalga oshirilgan!</h2>
@@ -28,7 +28,7 @@ $isPaid = $oferta && $oferta->payment_status == \common\models\StudentOferta::PA
                         </a>
                     </div>
                 </div>
-            <?php else: ?>
+            <?php else : ?>
                 <div class="row gx-lg-5">
                     <div class="col-lg-6 mb-4 mb-lg-0">
                         <h5 class="fw-bold mb-3 border-bottom pb-2">Shartnoma tafsilotlari</h5>

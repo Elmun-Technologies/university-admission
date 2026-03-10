@@ -3,6 +3,7 @@
 use yii\bootstrap5\ActiveForm;
 use yii\helpers\Html;
 use yii\helpers\ArrayHelper;
+use yii\widgets\MaskedInput;
 use common\models\Region;
 use common\models\District;
 use frontend\widgets\StepProgress;
@@ -29,13 +30,25 @@ $this->params['breadcrumbs'][] = $this->title;
 
             <div class="row">
                 <div class="col-md-3 mb-3">
-                    <?= $form->field($model, 'passport_series')->textInput(['maxlength' => 2, 'placeholder' => 'AA', 'class' => 'form-control text-uppercase']) ?>
+                    <?= $form->field($model, 'passport_series')->widget(MaskedInput::class, [
+                        'mask' => 'AA',
+                        'definitions' => [
+                            'A' => ['validator' => '[A-Z]', 'cardinality' => 1, 'casing' => 'upper']
+                        ],
+                        'options' => ['class' => 'form-control text-uppercase', 'placeholder' => 'AA']
+                    ]) ?>
                 </div>
                 <div class="col-md-5 mb-3">
-                    <?= $form->field($model, 'passport_number')->textInput(['maxlength' => 7, 'placeholder' => '1234567']) ?>
+                    <?= $form->field($model, 'passport_number')->widget(MaskedInput::class, [
+                        'mask' => '9999999',
+                        'options' => ['class' => 'form-control', 'placeholder' => '1234567']
+                    ]) ?>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <?= $form->field($model, 'pinfl')->textInput(['maxlength' => 14, 'placeholder' => '12345678901234']) ?>
+                    <?= $form->field($model, 'pinfl')->widget(MaskedInput::class, [
+                        'mask' => '99999999999999',
+                        'options' => ['class' => 'form-control', 'placeholder' => '12345678901234']
+                    ]) ?>
                 </div>
             </div>
 
@@ -61,7 +74,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
                 <div class="col-md-6 mb-3">
                     <?php
-                    // Typically an AJAX dropdown cascade, mapping empty locally for layout 
+                    // Typically an AJAX dropdown cascade, mapping empty locally for layout
                     $districts = $model->region_id ? ArrayHelper::map(District::find()->where(['region_id' => $model->region_id])->all(), 'id', 'name_uz') : [];
                     echo $form->field($model, 'district_id')->dropDownList($districts, ['prompt' => '---']);
                     ?>
@@ -85,7 +98,7 @@ $this->params['breadcrumbs'][] = $this->title;
 </div>
 
 <?php
-// Example simple cascade loader 
+// Example simple cascade loader
 $this->registerJs("
     $('#student-region_id').on('change', function() {
         var regionId = $(this).val();

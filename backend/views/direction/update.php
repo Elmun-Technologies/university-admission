@@ -97,7 +97,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 // Assume we have a method getEduFormIds()
                                 $selectedForms = !$model->isNewRecord ? \yii\helpers\ArrayHelper::getColumn($model->eduForms, 'id') : [];
                                 ?>
-                                <?php foreach ($availableForms as $formOption): ?>
+                                <?php foreach ($availableForms as $formOption) : ?>
                                     <div class="col-md-6 mb-3">
                                         <div class="form-check border rounded p-3 bg-white shadow-sm">
                                             <input class="form-check-input ms-1" type="checkbox" name="EduForms[]"
@@ -121,7 +121,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 $availableTypes = EduType::find()->all();
                                 $selectedTypes = !$model->isNewRecord ? \yii\helpers\ArrayHelper::getColumn($model->eduTypes, 'id') : [];
                                 ?>
-                                <?php foreach ($availableTypes as $typeOption): ?>
+                                <?php foreach ($availableTypes as $typeOption) : ?>
                                     <div class="col-md-6 mb-3">
                                         <div class="form-check border rounded p-3 bg-white shadow-sm">
                                             <input class="form-check-input ms-1" type="checkbox" name="EduTypes[]"

@@ -141,8 +141,9 @@ class PaymeGateway extends Component
         $extId = $params['id'];
         $txn = (new Query())->from('payment_transaction')->where(['ext_id' => $extId])->one();
 
-        if (!$txn)
+        if (!$txn) {
             return ['error' => ['code' => self::ERROR_TRANSACTION_NOT_FOUND], 'id' => $id];
+        }
 
         return [
             'result' => [

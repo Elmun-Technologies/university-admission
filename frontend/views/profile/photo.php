@@ -29,10 +29,10 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div id="photo-preview-container"
                     class="rounded overflow-hidden border bg-light d-flex align-items-center justify-content-center mb-3 shadow-sm"
                     style="width: 200px; height: 250px; object-fit: cover;">
-                    <?php if ($model->photo): ?>
+                    <?php if ($model->photo) : ?>
                         <img src="/<?= Html::encode($model->photo) ?>" alt="Current Photo"
                             style="width: 100%; height: 100%; object-fit: cover;">
-                    <?php else: ?>
+                    <?php else : ?>
                         <i class="bi bi-person text-secondary" style="font-size: 5rem;"></i>
                     <?php endif; ?>
                 </div>
