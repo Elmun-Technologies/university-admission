@@ -1,7 +1,7 @@
 <?php
 
 // Load .env file if it exists
-if (file_exists(dirname(dirname(__DIR__)) . '/.env')) {
+if (file_exists(dirname(dirname(__DIR__)) . '/.env') && class_exists('Dotenv\Dotenv')) {
     $dotenv = Dotenv\Dotenv::createUnsafeImmutable(dirname(dirname(__DIR__)));
     $dotenv->load();
 }
