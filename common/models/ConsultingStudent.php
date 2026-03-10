@@ -41,9 +41,12 @@ class ConsultingStudent extends ActiveRecord
             [['consulting_id', 'consulting_branch_id', 'student_id', 'registered_at', 'commission_paid'], 'integer'],
             [['commission_amount'], 'number'],
             [['student_id'], 'unique'],
-            [['consulting_branch_id'], 'exist', 'skipOnError' => true, 'targetClass' => ConsultingBranch::class, 'targetAttribute' => ['consulting_branch_id' => 'id']],
-            [['consulting_id'], 'exist', 'skipOnError' => true, 'targetClass' => Consulting::class, 'targetAttribute' => ['consulting_id' => 'id']],
-            [['student_id'], 'exist', 'skipOnError' => true, 'targetClass' => Student::class, 'targetAttribute' => ['student_id' => 'id']],
+            [['consulting_branch_id'], 'exist', 'skipOnError' => true, 'targetClass' => ConsultingBranch::class,
+                'targetAttribute' => ['consulting_branch_id' => 'id']],
+            [['consulting_id'], 'exist', 'skipOnError' => true, 'targetClass' => Consulting::class,
+                'targetAttribute' => ['consulting_id' => 'id']],
+            [['student_id'], 'exist', 'skipOnError' => true, 'targetClass' => Student::class,
+                'targetAttribute' => ['student_id' => 'id']],
         ];
     }
 

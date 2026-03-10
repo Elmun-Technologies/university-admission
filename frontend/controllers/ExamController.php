@@ -36,8 +36,9 @@ class ExamController extends Controller
     protected function findStudentModel()
     {
         $student = Student::findOne(['created_by' => Yii::$app->user->id]);
-        if (!$student)
+        if (!$student) {
             throw new NotFoundHttpException('Profile not found.');
+        }
         return $student;
     }
 
@@ -129,8 +130,9 @@ class ExamController extends Controller
         $student = $this->findStudentModel();
         $attempt = StudentExam::findOne(['id' => $id, 'student_id' => $student->id]);
 
-        if (!$attempt)
+        if (!$attempt) {
             throw new NotFoundHttpException('Exam not found.');
+        }
 
         // Verify window constraint
         $dateStr = $attempt->examDate->exam_date . ' ' . $attempt->examDate->start_time;
