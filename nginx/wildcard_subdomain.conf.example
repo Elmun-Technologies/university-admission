@@ -1,0 +1,43 @@
+# Wildcard Subdomain Configuration for Beruniy-Qabul
+# Domain: *.beruniy-qabul.uz
+
+# 1. Main Wildcard Server Block (Host Nginx)
+# This approach routes all subdomains to a central point or dynamically based on host header.
+
+server {
+    listen 80;
+    server_name *.beruniy-qabul.uz;
+
+    # Redirect to HTTPS
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl http2;
+    server_name ~^(?<subdomain>.+)\.beruniy-qabul\.uz$;
+
+    # Wildcard Certificate (Let's Encrypt with DNS-01 challenge)
+    ssl_certificate /etc/letsencrypt/live/beruniy-qabul.uz/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/beruniy-qabul.uz/privkey.pem;
+
+    # Security & Performance
+    include /etc/nginx/snippets/security-headers.conf;
+    gzip on;
+
+    location / {
+        # This requires a mapping of subdomain -> internal port
+        # For a truly dynamic approach, you could use a Lua script or 
+        # a proxy-pass to a central routing service.
+        
+        # Example: Simple manual mapping in Nginx if few instances
+        # if ($subdomain = "tashkent") { proxy_pass http://localhost:8031; }
+        # if ($subdomain = "samarkand") { proxy_pass http://localhost:8032; }
+
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_pass http://localhost:8080; # Points to a central router or specific container
+    }
+}
+
+# 2. How to obtain Wildcard Cert
+# certbot certonly --manual --preferred-challenges dns -d beruniy-qabul.uz -d *.beruniy-qabul.uz

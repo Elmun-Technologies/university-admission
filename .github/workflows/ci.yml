@@ -1,0 +1,33 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, dev ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.1'
+        extensions: mbstring, xml, ctype, iconv, mysql, gd
+        coverage: xdebug
+
+    - name: Install Dependencies
+      run: composer install --no-ansi --no-interaction --no-progress
+
+    - name: Run Quality Checks
+      run: make quality
+
+    - name: Run Migrations
+      run: |
+        php yii migrate/up --interactive=0
+
+    - name: Run Tests
+      run: make test

@@ -1,0 +1,14 @@
+parameters:
+    level: 5
+    paths:
+        - backend
+        - common
+        - console
+        - frontend
+        - api
+    bootstrapFiles:
+        - vendor/autoload.php
+        - vendor/yiisoft/yii2/Yii.php
+    ignoreErrors:
+        - '#Property .* does not exist on yii\\base\\Component.*#'
+        - '#Access to an undefined property .*#'

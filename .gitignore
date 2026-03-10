@@ -1,0 +1,36 @@
+# Yii2 Advanced Application Folders
+/vendor/
+/node_modules/
+/bower/
+
+# Yii2 Runtime and Assets
+/runtime/*
+!/runtime/.gitkeep
+/web/assets/*
+!/web/assets/.gitkeep
+/web/uploads/*
+!/web/uploads/.gitkeep
+
+# Environment configs (Secrets)
+.env
+.env.*
+!.env.example
+main-local.php
+params-local.php
+db-local.php
+
+# Docker
+mysql_data/
+docker-compose.override.yml
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Test coverage
+/tests/_output/*
+/tests/_support/_generated/*

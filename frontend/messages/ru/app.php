@@ -1,0 +1,35 @@
+<?php
+
+return [
+    'Kirish' => 'Войти',
+    'Ro\'yxatdan o\'tish' => 'Регистрация',
+    'Bosh sahifa' => 'Главная',
+    'Mening arizam' => 'Моя заявка',
+    'Imtihon' => 'Экзамен',
+    'Shartnoma' => 'Договор',
+    'Chiqish' => 'Выход',
+    'Tizimga kirish' => 'Вход в систему',
+    'Telefon raqamingiz' => 'Ваш номер телефона',
+    'Parol' => 'Пароль',
+    'Tizimda yo\'qmisiz?' => 'Нет аккаунта?',
+    'Foydalanuvchi topilmadi yoki parol noto\'g\'ri.' => 'Пользователь не найден или пароль неверный.',
+    'Shaxsiy ma\'lumotlar' => 'Личные данные',
+    'Hujjatlar' => 'Документы',
+    'Rasm' => 'Фото',
+    'Yo\'nalish tanlash' => 'Выбор направления',
+    'To\'lov' => 'Оплата',
+    'Keyingi qadam' => 'Следующий шаг',
+    'Saqlash' => 'Сохранить',
+    'Orqaga' => 'Назад',
+    'Muassasa' => 'Учреждение',
+
+    // Status translation map for frontend interface
+    'Yangi' => 'Новый',
+    'Anketa to\'ldirildi' => 'Анкета заполнена',
+    'Imtihon belgilandi' => 'Экзамен назначен',
+    'Imtihondan o\'tdi' => 'Экзамен сдан',
+    'Imtihondan yiqildi' => 'Экзамен не сдан',
+    'Shartnoma tuzildi' => 'Договор подписан',
+    'To\'landi' => 'Оплачено',
+    'Rad etildi' => 'Отклонен',
+];

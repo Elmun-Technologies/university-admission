@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<ruleset name="Beruniy-Qabul PSR-12">
+    <description>PSR-12 coding standard for Beruniy-Qabul.</description>
+    <arg name="basepath" value="."/>
+    <arg name="colors"/>
+    <arg name="parallel" value="75"/>
+    <arg name="extensions" value="php"/>
+
+    <file>backend</file>
+    <file>common</file>
+    <file>console</file>
+    <file>frontend</file>
+    <file>api</file>
+
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/migrations/*</exclude-pattern>
+    <exclude-pattern>*/assets/*</exclude-pattern>
+
+    <rule ref="PSR12"/>
+</ruleset>

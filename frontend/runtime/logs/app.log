@@ -1,0 +1,271 @@
+2026-03-10 22:11:56 [192.168.65.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in /app/vendor/yiisoft/yii2/base/Module.php:557
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/web/Application.php(106): yii\base\Module->runAction('', Array)
+#1 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /app/frontend/web/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /app/vendor/yiisoft/yii2/web/Application.php:118
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /app/frontend/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2026-03-10 22:11:56 [192.168.65.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PAYME_SECRET_KEY' => 'secret'
+    'HOSTNAME' => '576f3936c970'
+    'DB_PORT' => '3306'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'DB_DATABASE' => 'beruniy_qabul'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PAYME_MERCHANT_ID' => 'Paycom'
+    'TELEGRAM_BOT_TOKEN' => 'yourtoken'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.1.34'
+    'DB_USERNAME' => 'root'
+    'GPG_KEYS' => '528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD'
+    'PROJECT_NAME' => 'beruniy-qabul'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz.asc'
+    'AMOCRM_TOKEN' => 'yourtoken'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'TELEGRAM_CHAT_ID' => 'yourchat'
+    'DB_ROOT_PASSWORD' => 'root'
+    'NGINX_PORT' => '80'
+    'JWT_SECRET' => 'beruniy_rest_api_secret_2026'
+    'COOKIE_VALIDATION_KEY' => 'beruniy_2026_qabul_security_key'
+    'AMOCRM_DOMAIN' => 'yourdomain'
+    'DB_PASSWORD' => 'root'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/app'
+    'PHP_SHA256' => 'ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251'
+    'DB_HOST' => 'mariadb'
+    'USER' => 'www-data'
+    'HTTP_USER_AGENT' => 'Go-http-client/1.1'
+    'HTTP_HOST' => 'localhost'
+    'SCRIPT_FILENAME' => '/app/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.4'
+    'REMOTE_PORT' => '41252'
+    'REMOTE_ADDR' => '192.168.65.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1773180716.1514
+    'REQUEST_TIME' => 1773180716
+    'argv' => []
+    'argc' => 0
+]
+2026-03-10 22:11:56 [192.168.65.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in /app/vendor/yiisoft/yii2/base/Module.php:557
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/web/Application.php(106): yii\base\Module->runAction('', Array)
+#1 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /app/frontend/web/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /app/vendor/yiisoft/yii2/web/Application.php:118
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /app/frontend/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2026-03-10 22:11:56 [192.168.65.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PAYME_SECRET_KEY' => 'secret'
+    'HOSTNAME' => '576f3936c970'
+    'DB_PORT' => '3306'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'DB_DATABASE' => 'beruniy_qabul'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PAYME_MERCHANT_ID' => 'Paycom'
+    'TELEGRAM_BOT_TOKEN' => 'yourtoken'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.1.34'
+    'DB_USERNAME' => 'root'
+    'GPG_KEYS' => '528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD'
+    'PROJECT_NAME' => 'beruniy-qabul'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz.asc'
+    'AMOCRM_TOKEN' => 'yourtoken'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'TELEGRAM_CHAT_ID' => 'yourchat'
+    'DB_ROOT_PASSWORD' => 'root'
+    'NGINX_PORT' => '80'
+    'JWT_SECRET' => 'beruniy_rest_api_secret_2026'
+    'COOKIE_VALIDATION_KEY' => 'beruniy_2026_qabul_security_key'
+    'AMOCRM_DOMAIN' => 'yourdomain'
+    'DB_PASSWORD' => 'root'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/app'
+    'PHP_SHA256' => 'ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251'
+    'DB_HOST' => 'mariadb'
+    'USER' => 'www-data'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_USER_AGENT' => 'Go-http-client/1.1'
+    'HTTP_HOST' => 'localhost'
+    'SCRIPT_FILENAME' => '/app/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.4'
+    'REMOTE_PORT' => '41252'
+    'REMOTE_ADDR' => '192.168.65.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1773180716.2966
+    'REQUEST_TIME' => 1773180716
+    'argv' => []
+    'argc' => 0
+]
+2026-03-10 22:25:55 [192.168.65.1][2][96a258501947c0ca7e20203bac61f966][error][Error] Error: Class "common\models\Region" not found in /app/frontend/views/profile/documents.php:58
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /app/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/app/frontend/v...', Array)
+#2 /app/vendor/yiisoft/yii2/base/View.php(157): yii\base\View->renderFile('/app/frontend/v...', Array, Object(frontend\controllers\ProfileController))
+#3 /app/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->render('documents', Array, Object(frontend\controllers\ProfileController))
+#4 /app/frontend/controllers/ProfileController.php(115): yii\base\Controller->render('documents', Array)
+#5 [internal function]: frontend\controllers\ProfileController->actionDocuments()
+#6 /app/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#7 /app/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#8 /app/vendor/yiisoft/yii2/base/Module.php(548): yii\base\Controller->runAction('documents', Array)
+#9 /app/vendor/yiisoft/yii2/web/Application.php(106): yii\base\Module->runAction('profile/documen...', Array)
+#10 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /app/frontend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2026-03-10 22:25:55 [192.168.65.1][2][96a258501947c0ca7e20203bac61f966][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '96a258501947c0ca7e20203bac61f966'
+    '_csrf-frontend' => '1ca6b1532d798a76597a2852b738e3f4f1986e6b978fe9dbca7b974ffa2d58dfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"0RemloxxTeLnrE-e0QzpiLwXZSfsKBC1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/'
+    '__captcha/auth/captcha' => 'ftvixqh'
+    '__captcha/auth/captchacount' => 1
+    '__id' => 2
+    '__authKey' => 'X9ynbMMxJD2beAhPAJ8vNMVTEM-pS66w'
+]
+
+$_SERVER = [
+    'PAYME_SECRET_KEY' => 'secret'
+    'HOSTNAME' => '576f3936c970'
+    'DB_PORT' => '3306'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'DB_DATABASE' => 'beruniy_qabul'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PAYME_MERCHANT_ID' => 'Paycom'
+    'TELEGRAM_BOT_TOKEN' => 'yourtoken'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.1.34'
+    'DB_USERNAME' => 'root'
+    'GPG_KEYS' => '528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD'
+    'PROJECT_NAME' => 'beruniy-qabul'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz.asc'
+    'AMOCRM_TOKEN' => 'yourtoken'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'TELEGRAM_CHAT_ID' => 'yourchat'
+    'DB_ROOT_PASSWORD' => 'root'
+    'NGINX_PORT' => '80'
+    'JWT_SECRET' => 'beruniy_rest_api_secret_2026'
+    'COOKIE_VALIDATION_KEY' => 'beruniy_2026_qabul_security_key'
+    'AMOCRM_DOMAIN' => 'yourdomain'
+    'DB_PASSWORD' => 'root'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/app'
+    'PHP_SHA256' => 'ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251'
+    'DB_HOST' => 'mariadb'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => 'advanced-frontend=96a258501947c0ca7e20203bac61f966; _csrf-frontend=1ca6b1532d798a76597a2852b738e3f4f1986e6b978fe9dbca7b974ffa2d58dfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%220RemloxxTeLnrE-e0QzpiLwXZSfsKBC1%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_REFERER' => 'http://localhost/profile/personal'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost'
+    'SCRIPT_FILENAME' => '/app/frontend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.4'
+    'REMOTE_PORT' => '56451'
+    'REMOTE_ADDR' => '192.168.65.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/profile/documents'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1773181555.0319
+    'REQUEST_TIME' => 1773181555
+    'argv' => []
+    'argc' => 0
+]

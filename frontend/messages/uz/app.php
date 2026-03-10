@@ -1,0 +1,35 @@
+<?php
+
+return [
+    'Kirish' => 'Kirish',
+    'Ro\'yxatdan o\'tish' => 'Ro\'yxatdan o\'tish',
+    'Bosh sahifa' => 'Bosh sahifa',
+    'Mening arizam' => 'Mening arizam',
+    'Imtihon' => 'Imtihon',
+    'Shartnoma' => 'Shartnoma',
+    'Chiqish' => 'Chiqish',
+    'Tizimga kirish' => 'Tizimga kirish',
+    'Telefon raqamingiz' => 'Telefon raqamingiz',
+    'Parol' => 'Parol',
+    'Tizimda yo\'qmisiz?' => 'Tizimda yo\'qmisiz?',
+    'Foydalanuvchi topilmadi yoki parol noto\'g\'ri.' => 'Foydalanuvchi topilmadi yoki parol noto\'g\'ri.',
+    'Shaxsiy ma\'lumotlar' => 'Shaxsiy ma\'lumotlar',
+    'Hujjatlar' => 'Hujjatlar',
+    'Rasm' => 'Rasm',
+    'Yo\'nalish tanlash' => 'Yo\'nalish tanlash',
+    'To\'lov' => 'To\'lov',
+    'Keyingi qadam' => 'Keyingi qadam',
+    'Saqlash' => 'Saqlash',
+    'Orqaga' => 'Orqaga',
+    'Muassasa' => 'Muassasa',
+
+    // Status translation map for frontend interface
+    'Yangi' => 'Yangi',
+    'Anketa to\'ldirildi' => 'Anketa to\'ldirildi',
+    'Imtihon belgilandi' => 'Imtihon belgilandi',
+    'Imtihondan o\'tdi' => 'Imtihondan o\'tdi',
+    'Imtihondan yiqildi' => 'Imtihondan yiqildi',
+    'Shartnoma tuzildi' => 'Shartnoma tuzildi',
+    'To\'landi' => 'To\'landi',
+    'Rad etildi' => 'Rad etildi',
+];

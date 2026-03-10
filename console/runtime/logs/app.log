@@ -1,0 +1,1149 @@
+2026-03-10 20:54:44 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php:723
+Stack trace:
+#0 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(723): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(638): yii\db\Connection->createPdoInstance()
+#2 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(1068): yii\db\Connection->open()
+#3 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(1055): yii\db\Connection->getMasterPdo()
+#4 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(262): yii\db\Connection->getSlavePdo(true)
+#5 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(1182): yii\db\Command->prepare(true)
+#6 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(418): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/mysql/Schema.php(371): yii\db\Command->queryAll()
+#8 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/mysql/Schema.php(139): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/MigrateController.php(219): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(916): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(191): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#16 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#17 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Controller.php(188): yii\base\Controller->runAction('up', Array)
+#18 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Module.php(548): yii\console\Controller->runAction('up', Array)
+#19 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction('migrate/up', Array)
+#20 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction('migrate/up', Array)
+#21 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Application.php(383): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php:649
+Stack trace:
+#0 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(1068): yii\db\Connection->open()
+#1 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(1055): yii\db\Connection->getMasterPdo()
+#2 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(262): yii\db\Connection->getSlavePdo(true)
+#3 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(1182): yii\db\Command->prepare(true)
+#4 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(418): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/mysql/Schema.php(371): yii\db\Command->queryAll()
+#6 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/mysql/Schema.php(139): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/MigrateController.php(219): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(916): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(191): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#14 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#15 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Controller.php(188): yii\base\Controller->runAction('up', Array)
+#16 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Module.php(548): yii\console\Controller->runAction('up', Array)
+#17 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction('migrate/up', Array)
+#18 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction('migrate/up', Array)
+#19 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Application.php(383): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => No such file or directory
+)
+
+2026-03-10 20:54:44 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'OSLogRateLimit' => '64'
+    'MallocNanoZone' => '0'
+    'USER' => 'elmurodovnazir'
+    'COMMAND_MODE' => 'unix2003'
+    '__CFBundleIdentifier' => 'com.google.antigravity'
+    'PATH' => '/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/Users/elmurodovnazir/.local/bin'
+    'LOGNAME' => 'elmurodovnazir'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.k57qpjyNcR/Listeners'
+    'HOME' => '/Users/elmurodovnazir'
+    'SHELL' => '/bin/zsh'
+    'TMPDIR' => '/var/folders/dq/0mzspg092ws0dp8ch8l6kxkw0000gn/T/'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'XPC_FLAGS' => '0x0'
+    'SHLVL' => '1'
+    'PWD' => '/Users/elmurodovnazir/University Admisson System/beruniy-qabul'
+    'OLDPWD' => '/Users/elmurodovnazir/University Admisson System/beruniy-qabul'
+    'LANG' => 'C.UTF-8'
+    'HOMEBREW_PREFIX' => '/opt/homebrew'
+    'HOMEBREW_CELLAR' => '/opt/homebrew/Cellar'
+    'HOMEBREW_REPOSITORY' => '/opt/homebrew'
+    'INFOPATH' => '/opt/homebrew/share/info:/opt/homebrew/share/info:'
+    'PAGER' => 'cat'
+    'ANTIGRAVITY_AGENT' => '1'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.107.0'
+    'COLORTERM' => 'truecolor'
+    'ANTIGRAVITY_CLI_ALIAS' => 'agy'
+    'GIT_ASKPASS' => '/Applications/Antigravity.app/Contents/Resources/app/extensions/git/dist/askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => '/Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper (Plugin).app/Contents/MacOS/Antigravity Helper (Plugin)'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => ''
+    'VSCODE_GIT_ASKPASS_MAIN' => '/Applications/Antigravity.app/Contents/Resources/app/extensions/git/dist/askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '/var/folders/dq/0mzspg092ws0dp8ch8l6kxkw0000gn/T/vscode-git-f18b58b854.sock'
+    'VSCODE_INJECTION' => '1'
+    'ZDOTDIR' => '/Users/elmurodovnazir'
+    'USER_ZDOTDIR' => '/Users/elmurodovnazir'
+    'TERM' => 'xterm-256color'
+    'VSCODE_PROFILE_INITIALIZED' => '1'
+    'VSCODE_PYTHON_AUTOACTIVATE_GUARD' => '1'
+    '_' => '/Users/elmurodovnazir/University Admisson System/beruniy-qabul/./yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1773176084.0667
+    'REQUEST_TIME' => 1773176084
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate/up'
+        2 => '--migrationPath=vendor/yiisoft/yii2-queue/src/drivers/db/migrations'
+        3 => '--interactive=0'
+    ]
+    'argc' => 4
+]
+2026-03-10 21:00:10 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php:723
+Stack trace:
+#0 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(723): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(638): yii\db\Connection->createPdoInstance()
+#2 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(1068): yii\db\Connection->open()
+#3 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(1055): yii\db\Connection->getMasterPdo()
+#4 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(262): yii\db\Connection->getSlavePdo(true)
+#5 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(1182): yii\db\Command->prepare(true)
+#6 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(418): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/mysql/Schema.php(371): yii\db\Command->queryAll()
+#8 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/mysql/Schema.php(139): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/MigrateController.php(378): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(665): yii\console\controllers\MigrateController->getMigrationNameLimit()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionCreate('add_optimizatio...')
+#14 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#15 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Controller.php(188): yii\base\Controller->runAction('create', Array)
+#17 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Module.php(548): yii\console\Controller->runAction('create', Array)
+#18 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction('migrate/create', Array)
+#19 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction('migrate/create', Array)
+#20 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Application.php(383): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/yii(20): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php:649
+Stack trace:
+#0 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(1068): yii\db\Connection->open()
+#1 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(1055): yii\db\Connection->getMasterPdo()
+#2 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(262): yii\db\Connection->getSlavePdo(true)
+#3 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(1182): yii\db\Command->prepare(true)
+#4 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(418): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/mysql/Schema.php(371): yii\db\Command->queryAll()
+#6 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/mysql/Schema.php(139): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/MigrateController.php(378): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(665): yii\console\controllers\MigrateController->getMigrationNameLimit()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionCreate('add_optimizatio...')
+#12 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#13 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Controller.php(188): yii\base\Controller->runAction('create', Array)
+#15 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Module.php(548): yii\console\Controller->runAction('create', Array)
+#16 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction('migrate/create', Array)
+#17 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction('migrate/create', Array)
+#18 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Application.php(383): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/yii(20): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => No such file or directory
+)
+
+2026-03-10 21:00:10 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'OSLogRateLimit' => '64'
+    'MallocNanoZone' => '0'
+    'USER' => 'elmurodovnazir'
+    'COMMAND_MODE' => 'unix2003'
+    '__CFBundleIdentifier' => 'com.google.antigravity'
+    'PATH' => '/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/Users/elmurodovnazir/.local/bin'
+    'LOGNAME' => 'elmurodovnazir'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.k57qpjyNcR/Listeners'
+    'HOME' => '/Users/elmurodovnazir'
+    'SHELL' => '/bin/zsh'
+    'TMPDIR' => '/var/folders/dq/0mzspg092ws0dp8ch8l6kxkw0000gn/T/'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'XPC_FLAGS' => '0x0'
+    'SHLVL' => '1'
+    'PWD' => '/Users/elmurodovnazir/University Admisson System/beruniy-qabul'
+    'OLDPWD' => '/Users/elmurodovnazir/University Admisson System/beruniy-qabul'
+    'LANG' => 'C.UTF-8'
+    'HOMEBREW_PREFIX' => '/opt/homebrew'
+    'HOMEBREW_CELLAR' => '/opt/homebrew/Cellar'
+    'HOMEBREW_REPOSITORY' => '/opt/homebrew'
+    'INFOPATH' => '/opt/homebrew/share/info:/opt/homebrew/share/info:'
+    'PAGER' => 'cat'
+    'ANTIGRAVITY_AGENT' => '1'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.107.0'
+    'COLORTERM' => 'truecolor'
+    'ANTIGRAVITY_CLI_ALIAS' => 'agy'
+    'GIT_ASKPASS' => '/Applications/Antigravity.app/Contents/Resources/app/extensions/git/dist/askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => '/Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper (Plugin).app/Contents/MacOS/Antigravity Helper (Plugin)'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => ''
+    'VSCODE_GIT_ASKPASS_MAIN' => '/Applications/Antigravity.app/Contents/Resources/app/extensions/git/dist/askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '/var/folders/dq/0mzspg092ws0dp8ch8l6kxkw0000gn/T/vscode-git-f18b58b854.sock'
+    'VSCODE_INJECTION' => '1'
+    'ZDOTDIR' => '/Users/elmurodovnazir'
+    'USER_ZDOTDIR' => '/Users/elmurodovnazir'
+    'TERM' => 'xterm-256color'
+    'VSCODE_PROFILE_INITIALIZED' => '1'
+    'VSCODE_PYTHON_AUTOACTIVATE_GUARD' => '1'
+    '_' => '/Users/elmurodovnazir/University Admisson System/beruniy-qabul/./yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1773176410.9208
+    'REQUEST_TIME' => 1773176410
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate/create'
+        2 => 'add_optimization_indexes'
+        3 => '--interactive=0'
+    ]
+    'argc' => 4
+]
+2026-03-10 21:00:47 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php:723
+Stack trace:
+#0 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(723): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(638): yii\db\Connection->createPdoInstance()
+#2 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(1068): yii\db\Connection->open()
+#3 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(1055): yii\db\Connection->getMasterPdo()
+#4 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(262): yii\db\Connection->getSlavePdo(true)
+#5 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(1182): yii\db\Command->prepare(true)
+#6 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(418): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/mysql/Schema.php(371): yii\db\Command->queryAll()
+#8 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/mysql/Schema.php(139): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/MigrateController.php(219): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(916): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(191): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#16 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#17 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Controller.php(188): yii\base\Controller->runAction('up', Array)
+#18 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Module.php(548): yii\console\Controller->runAction('up', Array)
+#19 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction('migrate/up', Array)
+#20 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction('migrate/up', Array)
+#21 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Application.php(383): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php:649
+Stack trace:
+#0 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(1068): yii\db\Connection->open()
+#1 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(1055): yii\db\Connection->getMasterPdo()
+#2 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(262): yii\db\Connection->getSlavePdo(true)
+#3 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(1182): yii\db\Command->prepare(true)
+#4 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(418): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/mysql/Schema.php(371): yii\db\Command->queryAll()
+#6 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/mysql/Schema.php(139): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/MigrateController.php(219): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(916): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(191): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#14 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#15 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Controller.php(188): yii\base\Controller->runAction('up', Array)
+#16 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Module.php(548): yii\console\Controller->runAction('up', Array)
+#17 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction('migrate/up', Array)
+#18 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction('migrate/up', Array)
+#19 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Application.php(383): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => No such file or directory
+)
+
+2026-03-10 21:00:47 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'OSLogRateLimit' => '64'
+    'MallocNanoZone' => '0'
+    'USER' => 'elmurodovnazir'
+    'COMMAND_MODE' => 'unix2003'
+    '__CFBundleIdentifier' => 'com.google.antigravity'
+    'PATH' => '/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/Users/elmurodovnazir/.local/bin'
+    'LOGNAME' => 'elmurodovnazir'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.k57qpjyNcR/Listeners'
+    'HOME' => '/Users/elmurodovnazir'
+    'SHELL' => '/bin/zsh'
+    'TMPDIR' => '/var/folders/dq/0mzspg092ws0dp8ch8l6kxkw0000gn/T/'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'XPC_FLAGS' => '0x0'
+    'SHLVL' => '1'
+    'PWD' => '/Users/elmurodovnazir/University Admisson System/beruniy-qabul'
+    'OLDPWD' => '/Users/elmurodovnazir/University Admisson System/beruniy-qabul'
+    'LANG' => 'C.UTF-8'
+    'HOMEBREW_PREFIX' => '/opt/homebrew'
+    'HOMEBREW_CELLAR' => '/opt/homebrew/Cellar'
+    'HOMEBREW_REPOSITORY' => '/opt/homebrew'
+    'INFOPATH' => '/opt/homebrew/share/info:/opt/homebrew/share/info:'
+    'PAGER' => 'cat'
+    'ANTIGRAVITY_AGENT' => '1'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.107.0'
+    'COLORTERM' => 'truecolor'
+    'ANTIGRAVITY_CLI_ALIAS' => 'agy'
+    'GIT_ASKPASS' => '/Applications/Antigravity.app/Contents/Resources/app/extensions/git/dist/askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => '/Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper (Plugin).app/Contents/MacOS/Antigravity Helper (Plugin)'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => ''
+    'VSCODE_GIT_ASKPASS_MAIN' => '/Applications/Antigravity.app/Contents/Resources/app/extensions/git/dist/askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '/var/folders/dq/0mzspg092ws0dp8ch8l6kxkw0000gn/T/vscode-git-f18b58b854.sock'
+    'VSCODE_INJECTION' => '1'
+    'ZDOTDIR' => '/Users/elmurodovnazir'
+    'USER_ZDOTDIR' => '/Users/elmurodovnazir'
+    'TERM' => 'xterm-256color'
+    'VSCODE_PROFILE_INITIALIZED' => '1'
+    'VSCODE_PYTHON_AUTOACTIVATE_GUARD' => '1'
+    '_' => '/Users/elmurodovnazir/University Admisson System/beruniy-qabul/./yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1773176447.249
+    'REQUEST_TIME' => 1773176447
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate/up'
+        2 => '--interactive=0'
+    ]
+    'argc' => 3
+]
+2026-03-10 21:01:07 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php:723
+Stack trace:
+#0 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(723): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(638): yii\db\Connection->createPdoInstance()
+#2 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(1068): yii\db\Connection->open()
+#3 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(1055): yii\db\Connection->getMasterPdo()
+#4 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(262): yii\db\Connection->getSlavePdo(true)
+#5 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(1182): yii\db\Command->prepare(true)
+#6 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(418): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/mysql/Schema.php(371): yii\db\Command->queryAll()
+#8 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/mysql/Schema.php(139): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/MigrateController.php(219): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(561): yii\console\controllers\MigrateController->getMigrationHistory(10)
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionHistory(10)
+#14 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#15 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Controller.php(188): yii\base\Controller->runAction('history', Array)
+#17 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Module.php(548): yii\console\Controller->runAction('history', Array)
+#18 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction('migrate/history', Array)
+#19 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction('migrate/history', Array)
+#20 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Application.php(383): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/yii(20): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php:649
+Stack trace:
+#0 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(1068): yii\db\Connection->open()
+#1 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(1055): yii\db\Connection->getMasterPdo()
+#2 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(262): yii\db\Connection->getSlavePdo(true)
+#3 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(1182): yii\db\Command->prepare(true)
+#4 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(418): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/mysql/Schema.php(371): yii\db\Command->queryAll()
+#6 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/mysql/Schema.php(139): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/MigrateController.php(219): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(561): yii\console\controllers\MigrateController->getMigrationHistory(10)
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionHistory(10)
+#12 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#13 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Controller.php(188): yii\base\Controller->runAction('history', Array)
+#15 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Module.php(548): yii\console\Controller->runAction('history', Array)
+#16 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction('migrate/history', Array)
+#17 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction('migrate/history', Array)
+#18 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Application.php(383): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/yii(20): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => No such file or directory
+)
+
+2026-03-10 21:01:07 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'OSLogRateLimit' => '64'
+    'MallocNanoZone' => '0'
+    'USER' => 'elmurodovnazir'
+    'COMMAND_MODE' => 'unix2003'
+    '__CFBundleIdentifier' => 'com.google.antigravity'
+    'PATH' => '/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/Users/elmurodovnazir/.local/bin'
+    'LOGNAME' => 'elmurodovnazir'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.k57qpjyNcR/Listeners'
+    'HOME' => '/Users/elmurodovnazir'
+    'SHELL' => '/bin/zsh'
+    'TMPDIR' => '/var/folders/dq/0mzspg092ws0dp8ch8l6kxkw0000gn/T/'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'XPC_FLAGS' => '0x0'
+    'SHLVL' => '1'
+    'PWD' => '/Users/elmurodovnazir/University Admisson System/beruniy-qabul'
+    'OLDPWD' => '/Users/elmurodovnazir/University Admisson System/beruniy-qabul'
+    'LANG' => 'C.UTF-8'
+    'HOMEBREW_PREFIX' => '/opt/homebrew'
+    'HOMEBREW_CELLAR' => '/opt/homebrew/Cellar'
+    'HOMEBREW_REPOSITORY' => '/opt/homebrew'
+    'INFOPATH' => '/opt/homebrew/share/info:/opt/homebrew/share/info:'
+    'PAGER' => 'cat'
+    'ANTIGRAVITY_AGENT' => '1'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.107.0'
+    'COLORTERM' => 'truecolor'
+    'ANTIGRAVITY_CLI_ALIAS' => 'agy'
+    'GIT_ASKPASS' => '/Applications/Antigravity.app/Contents/Resources/app/extensions/git/dist/askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => '/Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper (Plugin).app/Contents/MacOS/Antigravity Helper (Plugin)'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => ''
+    'VSCODE_GIT_ASKPASS_MAIN' => '/Applications/Antigravity.app/Contents/Resources/app/extensions/git/dist/askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '/var/folders/dq/0mzspg092ws0dp8ch8l6kxkw0000gn/T/vscode-git-f18b58b854.sock'
+    'VSCODE_INJECTION' => '1'
+    'ZDOTDIR' => '/Users/elmurodovnazir'
+    'USER_ZDOTDIR' => '/Users/elmurodovnazir'
+    'TERM' => 'xterm-256color'
+    'VSCODE_PROFILE_INITIALIZED' => '1'
+    'VSCODE_PYTHON_AUTOACTIVATE_GUARD' => '1'
+    '_' => '/Users/elmurodovnazir/University Admisson System/beruniy-qabul/./yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1773176467.0369
+    'REQUEST_TIME' => 1773176467
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate/history'
+        2 => '--interactive=0'
+    ]
+    'argc' => 3
+]
+2026-03-10 21:02:10 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php:723
+Stack trace:
+#0 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(723): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(638): yii\db\Connection->createPdoInstance()
+#2 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(1068): yii\db\Connection->open()
+#3 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(1055): yii\db\Connection->getMasterPdo()
+#4 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(262): yii\db\Connection->getSlavePdo(true)
+#5 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(1182): yii\db\Command->prepare(true)
+#6 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(418): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/mysql/Schema.php(371): yii\db\Command->queryAll()
+#8 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/mysql/Schema.php(139): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/MigrateController.php(219): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(916): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(191): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#16 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#17 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Controller.php(188): yii\base\Controller->runAction('up', Array)
+#18 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Module.php(548): yii\console\Controller->runAction('up', Array)
+#19 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction('migrate/up', Array)
+#20 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction('migrate/up', Array)
+#21 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Application.php(383): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php:649
+Stack trace:
+#0 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(1068): yii\db\Connection->open()
+#1 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Connection.php(1055): yii\db\Connection->getMasterPdo()
+#2 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(262): yii\db\Connection->getSlavePdo(true)
+#3 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(1182): yii\db\Command->prepare(true)
+#4 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Command.php(418): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/mysql/Schema.php(371): yii\db\Command->queryAll()
+#6 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/mysql/Schema.php(139): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/MigrateController.php(219): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(916): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(191): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#14 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#15 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Controller.php(188): yii\base\Controller->runAction('up', Array)
+#16 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Module.php(548): yii\console\Controller->runAction('up', Array)
+#17 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction('migrate/up', Array)
+#18 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction('migrate/up', Array)
+#19 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/vendor/yiisoft/yii2/base/Application.php(383): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /Users/elmurodovnazir/University Admisson System/beruniy-qabul/yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => No such file or directory
+)
+
+2026-03-10 21:02:10 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'OSLogRateLimit' => '64'
+    'MallocNanoZone' => '0'
+    'USER' => 'elmurodovnazir'
+    'COMMAND_MODE' => 'unix2003'
+    '__CFBundleIdentifier' => 'com.google.antigravity'
+    'PATH' => '/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/Users/elmurodovnazir/.local/bin'
+    'LOGNAME' => 'elmurodovnazir'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.k57qpjyNcR/Listeners'
+    'HOME' => '/Users/elmurodovnazir'
+    'SHELL' => '/bin/zsh'
+    'TMPDIR' => '/var/folders/dq/0mzspg092ws0dp8ch8l6kxkw0000gn/T/'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'XPC_FLAGS' => '0x0'
+    'SHLVL' => '1'
+    'PWD' => '/Users/elmurodovnazir/University Admisson System/beruniy-qabul'
+    'OLDPWD' => '/Users/elmurodovnazir/University Admisson System/beruniy-qabul'
+    'LANG' => 'C.UTF-8'
+    'HOMEBREW_PREFIX' => '/opt/homebrew'
+    'HOMEBREW_CELLAR' => '/opt/homebrew/Cellar'
+    'HOMEBREW_REPOSITORY' => '/opt/homebrew'
+    'INFOPATH' => '/opt/homebrew/share/info:/opt/homebrew/share/info:'
+    'PAGER' => 'cat'
+    'ANTIGRAVITY_AGENT' => '1'
+    'TERM_PROGRAM' => 'vscode'
+    'TERM_PROGRAM_VERSION' => '1.107.0'
+    'COLORTERM' => 'truecolor'
+    'ANTIGRAVITY_CLI_ALIAS' => 'agy'
+    'GIT_ASKPASS' => '/Applications/Antigravity.app/Contents/Resources/app/extensions/git/dist/askpass.sh'
+    'VSCODE_GIT_ASKPASS_NODE' => '/Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper (Plugin).app/Contents/MacOS/Antigravity Helper (Plugin)'
+    'VSCODE_GIT_ASKPASS_EXTRA_ARGS' => ''
+    'VSCODE_GIT_ASKPASS_MAIN' => '/Applications/Antigravity.app/Contents/Resources/app/extensions/git/dist/askpass-main.js'
+    'VSCODE_GIT_IPC_HANDLE' => '/var/folders/dq/0mzspg092ws0dp8ch8l6kxkw0000gn/T/vscode-git-f18b58b854.sock'
+    'VSCODE_INJECTION' => '1'
+    'ZDOTDIR' => '/Users/elmurodovnazir'
+    'USER_ZDOTDIR' => '/Users/elmurodovnazir'
+    'TERM' => 'xterm-256color'
+    'VSCODE_PROFILE_INITIALIZED' => '1'
+    'VSCODE_PYTHON_AUTOACTIVATE_GUARD' => '1'
+    '_' => '/Users/elmurodovnazir/University Admisson System/beruniy-qabul/./yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1773176530.48
+    'REQUEST_TIME' => 1773176530
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate/up'
+        2 => '--interactive=0'
+    ]
+    'argc' => 3
+]
+2026-03-10 21:51:39 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /app/vendor/yiisoft/yii2/db/Connection.php:723
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/db/Connection.php(723): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /app/vendor/yiisoft/yii2/db/Connection.php(638): yii\db\Connection->createPdoInstance()
+#2 /app/vendor/yiisoft/yii2/db/Connection.php(1068): yii\db\Connection->open()
+#3 /app/vendor/yiisoft/yii2/db/Connection.php(1055): yii\db\Connection->getMasterPdo()
+#4 /app/vendor/yiisoft/yii2/db/Command.php(262): yii\db\Connection->getSlavePdo(true)
+#5 /app/vendor/yiisoft/yii2/db/Command.php(1182): yii\db\Command->prepare(true)
+#6 /app/vendor/yiisoft/yii2/db/Command.php(418): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /app/vendor/yiisoft/yii2/db/mysql/Schema.php(371): yii\db\Command->queryAll()
+#8 /app/vendor/yiisoft/yii2/db/mysql/Schema.php(139): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /app/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /app/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 /app/vendor/yiisoft/yii2/console/controllers/MigrateController.php(219): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 /app/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(916): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 /app/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(191): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 /app/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#16 /app/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#17 /app/vendor/yiisoft/yii2/console/Controller.php(188): yii\base\Controller->runAction('', Array)
+#18 /app/vendor/yiisoft/yii2/base/Module.php(548): yii\console\Controller->runAction('', Array)
+#19 /app/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction('migrate', Array)
+#20 /app/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction('migrate', Array)
+#21 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 /app/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /app/vendor/yiisoft/yii2/db/Connection.php:649
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/db/Connection.php(1068): yii\db\Connection->open()
+#1 /app/vendor/yiisoft/yii2/db/Connection.php(1055): yii\db\Connection->getMasterPdo()
+#2 /app/vendor/yiisoft/yii2/db/Command.php(262): yii\db\Connection->getSlavePdo(true)
+#3 /app/vendor/yiisoft/yii2/db/Command.php(1182): yii\db\Command->prepare(true)
+#4 /app/vendor/yiisoft/yii2/db/Command.php(418): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /app/vendor/yiisoft/yii2/db/mysql/Schema.php(371): yii\db\Command->queryAll()
+#6 /app/vendor/yiisoft/yii2/db/mysql/Schema.php(139): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /app/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /app/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 /app/vendor/yiisoft/yii2/console/controllers/MigrateController.php(219): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 /app/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(916): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 /app/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(191): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 /app/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#14 /app/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#15 /app/vendor/yiisoft/yii2/console/Controller.php(188): yii\base\Controller->runAction('', Array)
+#16 /app/vendor/yiisoft/yii2/base/Module.php(548): yii\console\Controller->runAction('', Array)
+#17 /app/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction('migrate', Array)
+#18 /app/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction('migrate', Array)
+#19 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /app/yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => No such file or directory
+)
+
+2026-03-10 21:51:39 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'HOSTNAME' => '2b8488445891'
+    'TERM' => 'xterm'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'GPG_KEYS' => '528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD'
+    'PHP_VERSION' => '8.1.34'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz.asc'
+    'PHP_SHA256' => 'ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251'
+    'HOME' => '/root'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1773179499.2774
+    'REQUEST_TIME' => 1773179499
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+        2 => '--interactive=0'
+    ]
+    'argc' => 3
+]
+2026-03-10 21:51:46 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /app/vendor/yiisoft/yii2/db/Connection.php:723
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/db/Connection.php(723): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /app/vendor/yiisoft/yii2/db/Connection.php(638): yii\db\Connection->createPdoInstance()
+#2 /app/vendor/yiisoft/yii2/db/Connection.php(1068): yii\db\Connection->open()
+#3 /app/vendor/yiisoft/yii2/db/Connection.php(1055): yii\db\Connection->getMasterPdo()
+#4 /app/vendor/yiisoft/yii2/db/Command.php(262): yii\db\Connection->getSlavePdo(true)
+#5 /app/vendor/yiisoft/yii2/db/Command.php(1182): yii\db\Command->prepare(true)
+#6 /app/vendor/yiisoft/yii2/db/Command.php(418): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /app/vendor/yiisoft/yii2/db/mysql/Schema.php(371): yii\db\Command->queryAll()
+#8 /app/vendor/yiisoft/yii2/db/mysql/Schema.php(139): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /app/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /app/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 /app/vendor/yiisoft/yii2/console/controllers/MigrateController.php(219): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 /app/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(916): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 /app/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(191): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 /app/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#16 /app/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#17 /app/vendor/yiisoft/yii2/console/Controller.php(188): yii\base\Controller->runAction('', Array)
+#18 /app/vendor/yiisoft/yii2/base/Module.php(548): yii\console\Controller->runAction('', Array)
+#19 /app/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction('migrate', Array)
+#20 /app/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction('migrate', Array)
+#21 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 /app/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /app/vendor/yiisoft/yii2/db/Connection.php:649
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/db/Connection.php(1068): yii\db\Connection->open()
+#1 /app/vendor/yiisoft/yii2/db/Connection.php(1055): yii\db\Connection->getMasterPdo()
+#2 /app/vendor/yiisoft/yii2/db/Command.php(262): yii\db\Connection->getSlavePdo(true)
+#3 /app/vendor/yiisoft/yii2/db/Command.php(1182): yii\db\Command->prepare(true)
+#4 /app/vendor/yiisoft/yii2/db/Command.php(418): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /app/vendor/yiisoft/yii2/db/mysql/Schema.php(371): yii\db\Command->queryAll()
+#6 /app/vendor/yiisoft/yii2/db/mysql/Schema.php(139): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /app/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /app/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 /app/vendor/yiisoft/yii2/console/controllers/MigrateController.php(219): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 /app/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(916): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 /app/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(191): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 /app/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#14 /app/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#15 /app/vendor/yiisoft/yii2/console/Controller.php(188): yii\base\Controller->runAction('', Array)
+#16 /app/vendor/yiisoft/yii2/base/Module.php(548): yii\console\Controller->runAction('', Array)
+#17 /app/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction('migrate', Array)
+#18 /app/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction('migrate', Array)
+#19 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /app/yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => No such file or directory
+)
+
+2026-03-10 21:51:46 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'HOSTNAME' => '2b8488445891'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'GPG_KEYS' => '528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD'
+    'PHP_VERSION' => '8.1.34'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz.asc'
+    'PHP_SHA256' => 'ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251'
+    'HOME' => '/root'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1773179506.1427
+    'REQUEST_TIME' => 1773179506
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+        2 => '--interactive=0'
+    ]
+    'argc' => 3
+]
+2026-03-10 21:52:02 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /app/vendor/yiisoft/yii2/db/Connection.php:723
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/db/Connection.php(723): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /app/vendor/yiisoft/yii2/db/Connection.php(638): yii\db\Connection->createPdoInstance()
+#2 /app/vendor/yiisoft/yii2/db/Connection.php(1068): yii\db\Connection->open()
+#3 /app/vendor/yiisoft/yii2/db/Connection.php(1055): yii\db\Connection->getMasterPdo()
+#4 /app/vendor/yiisoft/yii2/db/Command.php(262): yii\db\Connection->getSlavePdo(true)
+#5 /app/vendor/yiisoft/yii2/db/Command.php(1182): yii\db\Command->prepare(true)
+#6 /app/vendor/yiisoft/yii2/db/Command.php(418): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /app/vendor/yiisoft/yii2/db/mysql/Schema.php(371): yii\db\Command->queryAll()
+#8 /app/vendor/yiisoft/yii2/db/mysql/Schema.php(139): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /app/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /app/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 /app/vendor/yiisoft/yii2/console/controllers/MigrateController.php(219): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 /app/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(916): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 /app/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(191): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 /app/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#16 /app/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#17 /app/vendor/yiisoft/yii2/console/Controller.php(188): yii\base\Controller->runAction('', Array)
+#18 /app/vendor/yiisoft/yii2/base/Module.php(548): yii\console\Controller->runAction('', Array)
+#19 /app/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction('migrate', Array)
+#20 /app/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction('migrate', Array)
+#21 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 /app/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /app/vendor/yiisoft/yii2/db/Connection.php:649
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/db/Connection.php(1068): yii\db\Connection->open()
+#1 /app/vendor/yiisoft/yii2/db/Connection.php(1055): yii\db\Connection->getMasterPdo()
+#2 /app/vendor/yiisoft/yii2/db/Command.php(262): yii\db\Connection->getSlavePdo(true)
+#3 /app/vendor/yiisoft/yii2/db/Command.php(1182): yii\db\Command->prepare(true)
+#4 /app/vendor/yiisoft/yii2/db/Command.php(418): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /app/vendor/yiisoft/yii2/db/mysql/Schema.php(371): yii\db\Command->queryAll()
+#6 /app/vendor/yiisoft/yii2/db/mysql/Schema.php(139): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /app/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /app/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 /app/vendor/yiisoft/yii2/console/controllers/MigrateController.php(219): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 /app/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(916): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 /app/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(191): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 /app/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#14 /app/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#15 /app/vendor/yiisoft/yii2/console/Controller.php(188): yii\base\Controller->runAction('', Array)
+#16 /app/vendor/yiisoft/yii2/base/Module.php(548): yii\console\Controller->runAction('', Array)
+#17 /app/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction('migrate', Array)
+#18 /app/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction('migrate', Array)
+#19 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /app/yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => No such file or directory
+)
+
+2026-03-10 21:52:02 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'HOSTNAME' => '2b8488445891'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'GPG_KEYS' => '528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD'
+    'PHP_VERSION' => '8.1.34'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz.asc'
+    'PHP_SHA256' => 'ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251'
+    'HOME' => '/root'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1773179522.3591
+    'REQUEST_TIME' => 1773179522
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+        2 => '--interactive=0'
+    ]
+    'argc' => 3
+]
+2026-03-10 21:52:10 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /app/vendor/yiisoft/yii2/db/Connection.php:723
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/db/Connection.php(723): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /app/vendor/yiisoft/yii2/db/Connection.php(638): yii\db\Connection->createPdoInstance()
+#2 /app/vendor/yiisoft/yii2/db/Connection.php(1068): yii\db\Connection->open()
+#3 /app/vendor/yiisoft/yii2/db/Connection.php(1055): yii\db\Connection->getMasterPdo()
+#4 /app/vendor/yiisoft/yii2/db/Command.php(262): yii\db\Connection->getSlavePdo(true)
+#5 /app/vendor/yiisoft/yii2/db/Command.php(1182): yii\db\Command->prepare(true)
+#6 /app/vendor/yiisoft/yii2/db/Command.php(418): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /app/vendor/yiisoft/yii2/db/mysql/Schema.php(371): yii\db\Command->queryAll()
+#8 /app/vendor/yiisoft/yii2/db/mysql/Schema.php(139): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /app/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /app/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 /app/vendor/yiisoft/yii2/console/controllers/MigrateController.php(219): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 /app/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(916): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 /app/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(191): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 /app/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#16 /app/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#17 /app/vendor/yiisoft/yii2/console/Controller.php(188): yii\base\Controller->runAction('', Array)
+#18 /app/vendor/yiisoft/yii2/base/Module.php(548): yii\console\Controller->runAction('', Array)
+#19 /app/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction('migrate', Array)
+#20 /app/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction('migrate', Array)
+#21 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 /app/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /app/vendor/yiisoft/yii2/db/Connection.php:649
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/db/Connection.php(1068): yii\db\Connection->open()
+#1 /app/vendor/yiisoft/yii2/db/Connection.php(1055): yii\db\Connection->getMasterPdo()
+#2 /app/vendor/yiisoft/yii2/db/Command.php(262): yii\db\Connection->getSlavePdo(true)
+#3 /app/vendor/yiisoft/yii2/db/Command.php(1182): yii\db\Command->prepare(true)
+#4 /app/vendor/yiisoft/yii2/db/Command.php(418): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /app/vendor/yiisoft/yii2/db/mysql/Schema.php(371): yii\db\Command->queryAll()
+#6 /app/vendor/yiisoft/yii2/db/mysql/Schema.php(139): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /app/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /app/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 /app/vendor/yiisoft/yii2/console/controllers/MigrateController.php(219): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 /app/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(916): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 /app/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(191): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 /app/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#14 /app/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#15 /app/vendor/yiisoft/yii2/console/Controller.php(188): yii\base\Controller->runAction('', Array)
+#16 /app/vendor/yiisoft/yii2/base/Module.php(548): yii\console\Controller->runAction('', Array)
+#17 /app/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction('migrate', Array)
+#18 /app/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction('migrate', Array)
+#19 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /app/yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => No such file or directory
+)
+
+2026-03-10 21:52:10 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'HOSTNAME' => '2b8488445891'
+    'TERM' => 'xterm'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'GPG_KEYS' => '528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD'
+    'PHP_VERSION' => '8.1.34'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz.asc'
+    'PHP_SHA256' => 'ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251'
+    'HOME' => '/root'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1773179530.7884
+    'REQUEST_TIME' => 1773179530
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+        2 => '--interactive=0'
+    ]
+    'argc' => 3
+]
+2026-03-10 21:52:18 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /app/vendor/yiisoft/yii2/db/Connection.php:723
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/db/Connection.php(723): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /app/vendor/yiisoft/yii2/db/Connection.php(638): yii\db\Connection->createPdoInstance()
+#2 /app/vendor/yiisoft/yii2/db/Connection.php(1068): yii\db\Connection->open()
+#3 /app/vendor/yiisoft/yii2/db/Connection.php(1055): yii\db\Connection->getMasterPdo()
+#4 /app/vendor/yiisoft/yii2/db/Command.php(262): yii\db\Connection->getSlavePdo(true)
+#5 /app/vendor/yiisoft/yii2/db/Command.php(1182): yii\db\Command->prepare(true)
+#6 /app/vendor/yiisoft/yii2/db/Command.php(418): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /app/vendor/yiisoft/yii2/db/mysql/Schema.php(371): yii\db\Command->queryAll()
+#8 /app/vendor/yiisoft/yii2/db/mysql/Schema.php(139): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /app/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /app/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 /app/vendor/yiisoft/yii2/console/controllers/MigrateController.php(219): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 /app/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(916): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 /app/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(191): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 /app/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#16 /app/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#17 /app/vendor/yiisoft/yii2/console/Controller.php(188): yii\base\Controller->runAction('', Array)
+#18 /app/vendor/yiisoft/yii2/base/Module.php(548): yii\console\Controller->runAction('', Array)
+#19 /app/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction('migrate', Array)
+#20 /app/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction('migrate', Array)
+#21 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 /app/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /app/vendor/yiisoft/yii2/db/Connection.php:649
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/db/Connection.php(1068): yii\db\Connection->open()
+#1 /app/vendor/yiisoft/yii2/db/Connection.php(1055): yii\db\Connection->getMasterPdo()
+#2 /app/vendor/yiisoft/yii2/db/Command.php(262): yii\db\Connection->getSlavePdo(true)
+#3 /app/vendor/yiisoft/yii2/db/Command.php(1182): yii\db\Command->prepare(true)
+#4 /app/vendor/yiisoft/yii2/db/Command.php(418): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /app/vendor/yiisoft/yii2/db/mysql/Schema.php(371): yii\db\Command->queryAll()
+#6 /app/vendor/yiisoft/yii2/db/mysql/Schema.php(139): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /app/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /app/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 /app/vendor/yiisoft/yii2/console/controllers/MigrateController.php(219): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 /app/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(916): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 /app/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(191): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 /app/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#14 /app/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#15 /app/vendor/yiisoft/yii2/console/Controller.php(188): yii\base\Controller->runAction('', Array)
+#16 /app/vendor/yiisoft/yii2/base/Module.php(548): yii\console\Controller->runAction('', Array)
+#17 /app/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction('migrate', Array)
+#18 /app/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction('migrate', Array)
+#19 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /app/yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => No such file or directory
+)
+
+2026-03-10 21:52:18 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'HOSTNAME' => '2b8488445891'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'GPG_KEYS' => '528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD'
+    'PHP_VERSION' => '8.1.34'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz.asc'
+    'PHP_SHA256' => 'ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251'
+    'HOME' => '/root'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1773179538.3602
+    'REQUEST_TIME' => 1773179538
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+        2 => '--interactive=0'
+    ]
+    'argc' => 3
+]
+2026-03-10 22:17:41 [-][-][-][error][yii\base\ErrorException:1] yii\base\ErrorException: Uncaught yii\base\InvalidConfigException: Unknown bootstrapping component ID: queue in /app/vendor/yiisoft/yii2/base/Application.php:315
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/base/Application.php(271): yii\base\Application->bootstrap()
+#1 /app/vendor/yiisoft/yii2/console/Application.php(125): yii\base\Application->init()
+#2 /app/vendor/yiisoft/yii2/base/BaseObject.php(110): yii\console\Application->init()
+#3 /app/vendor/yiisoft/yii2/base/Application.php(204): yii\base\BaseObject->__construct(Array)
+#4 /app/vendor/yiisoft/yii2/console/Application.php(90): yii\base\Application->__construct(Array)
+#5 Command line code(1): yii\console\Application->__construct(Array)
+#6 {main}
+  thrown in /app/vendor/yiisoft/yii2/base/Application.php:315
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2026-03-10 22:17:41 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'HOSTNAME' => '576f3936c970'
+    'TERM' => 'xterm'
+    'DB_ROOT_PASSWORD' => 'root'
+    'DB_HOST' => 'mariadb'
+    'PAYME_MERCHANT_ID' => 'Paycom'
+    'PROJECT_NAME' => 'beruniy-qabul'
+    'COOKIE_VALIDATION_KEY' => 'beruniy_2026_qabul_security_key'
+    'TELEGRAM_BOT_TOKEN' => 'yourtoken'
+    'DB_USERNAME' => 'root'
+    'DB_DATABASE' => 'beruniy_qabul'
+    'AMOCRM_TOKEN' => 'yourtoken'
+    'TELEGRAM_CHAT_ID' => 'yourchat'
+    'AMOCRM_DOMAIN' => 'yourdomain'
+    'NGINX_PORT' => '80'
+    'DB_PASSWORD' => 'root'
+    'PAYME_SECRET_KEY' => 'secret'
+    'DB_PORT' => '3306'
+    'JWT_SECRET' => 'beruniy_rest_api_secret_2026'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'GPG_KEYS' => '528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD'
+    'PHP_VERSION' => '8.1.34'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz.asc'
+    'PHP_SHA256' => 'ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251'
+    'HOME' => '/root'
+    'PHP_SELF' => 'Standard input code'
+    'SCRIPT_NAME' => 'Standard input code'
+    'SCRIPT_FILENAME' => ''
+    'PATH_TRANSLATED' => ''
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1773181061.0813
+    'REQUEST_TIME' => 1773181061
+    'argv' => [
+        0 => 'Standard input code'
+    ]
+    'argc' => 1
+]

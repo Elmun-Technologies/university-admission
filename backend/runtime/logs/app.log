@@ -1,0 +1,1239 @@
+2026-03-10 22:12:57 [192.168.65.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in /app/vendor/yiisoft/yii2/base/Module.php:557
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/web/Application.php(106): yii\base\Module->runAction('', Array)
+#1 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /app/backend/web/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /app/vendor/yiisoft/yii2/web/Application.php:118
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /app/backend/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2026-03-10 22:12:57 [192.168.65.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PAYME_SECRET_KEY' => 'secret'
+    'HOSTNAME' => '576f3936c970'
+    'DB_PORT' => '3306'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'DB_DATABASE' => 'beruniy_qabul'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PAYME_MERCHANT_ID' => 'Paycom'
+    'TELEGRAM_BOT_TOKEN' => 'yourtoken'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.1.34'
+    'DB_USERNAME' => 'root'
+    'GPG_KEYS' => '528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD'
+    'PROJECT_NAME' => 'beruniy-qabul'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz.asc'
+    'AMOCRM_TOKEN' => 'yourtoken'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'TELEGRAM_CHAT_ID' => 'yourchat'
+    'DB_ROOT_PASSWORD' => 'root'
+    'NGINX_PORT' => '80'
+    'JWT_SECRET' => 'beruniy_rest_api_secret_2026'
+    'COOKIE_VALIDATION_KEY' => 'beruniy_2026_qabul_security_key'
+    'AMOCRM_DOMAIN' => 'yourdomain'
+    'DB_PASSWORD' => 'root'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/app'
+    'PHP_SHA256' => 'ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251'
+    'DB_HOST' => 'mariadb'
+    'USER' => 'www-data'
+    'HTTP_USER_AGENT' => 'Go-http-client/1.1'
+    'HTTP_HOST' => 'localhost'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.4'
+    'REMOTE_PORT' => '41252'
+    'REMOTE_ADDR' => '192.168.65.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/admin/index.php'
+    'REQUEST_URI' => '/admin/'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1773180777.9056
+    'REQUEST_TIME' => 1773180777
+    'argv' => []
+    'argc' => 0
+]
+2026-03-10 22:12:57 [192.168.65.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in /app/vendor/yiisoft/yii2/base/Module.php:557
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/web/Application.php(106): yii\base\Module->runAction('', Array)
+#1 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /app/backend/web/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /app/vendor/yiisoft/yii2/web/Application.php:118
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /app/backend/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2026-03-10 22:12:57 [192.168.65.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PAYME_SECRET_KEY' => 'secret'
+    'HOSTNAME' => '576f3936c970'
+    'DB_PORT' => '3306'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'DB_DATABASE' => 'beruniy_qabul'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PAYME_MERCHANT_ID' => 'Paycom'
+    'TELEGRAM_BOT_TOKEN' => 'yourtoken'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.1.34'
+    'DB_USERNAME' => 'root'
+    'GPG_KEYS' => '528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD'
+    'PROJECT_NAME' => 'beruniy-qabul'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz.asc'
+    'AMOCRM_TOKEN' => 'yourtoken'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'TELEGRAM_CHAT_ID' => 'yourchat'
+    'DB_ROOT_PASSWORD' => 'root'
+    'NGINX_PORT' => '80'
+    'JWT_SECRET' => 'beruniy_rest_api_secret_2026'
+    'COOKIE_VALIDATION_KEY' => 'beruniy_2026_qabul_security_key'
+    'AMOCRM_DOMAIN' => 'yourdomain'
+    'DB_PASSWORD' => 'root'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/app'
+    'PHP_SHA256' => 'ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251'
+    'DB_HOST' => 'mariadb'
+    'USER' => 'www-data'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_USER_AGENT' => 'Go-http-client/1.1'
+    'HTTP_HOST' => 'localhost'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.4'
+    'REMOTE_PORT' => '41252'
+    'REMOTE_ADDR' => '192.168.65.1'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/admin/index.php'
+    'REQUEST_URI' => '/admin/'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1773180777.934
+    'REQUEST_TIME' => 1773180777
+    'argv' => []
+    'argc' => 0
+]
+2026-03-10 22:19:57 [169.150.247.37][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The directory does not exist:  in /app/vendor/yiisoft/yii2/web/AssetManager.php:248
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/web/AssetManager.php(565): yii\web\AssetManager->checkBasePathPermission()
+#1 /app/vendor/yiisoft/yii2/web/AssetManager.php(497): yii\web\AssetManager->publishDirectory('/app/vendor/yii...', Array)
+#2 /app/vendor/yiisoft/yii2/web/AssetBundle.php(189): yii\web\AssetManager->publish('/app/vendor/yii...', Array)
+#3 /app/vendor/yiisoft/yii2/web/AssetManager.php(304): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#4 /app/vendor/yiisoft/yii2/web/AssetManager.php(275): yii\web\AssetManager->loadBundle('yii\\validators\\...', Array, true)
+#5 /app/vendor/yiisoft/yii2/web/View.php(319): yii\web\AssetManager->getBundle('yii\\validators\\...')
+#6 /app/vendor/yiisoft/yii2/web/AssetBundle.php(131): yii\web\View->registerAssetBundle('yii\\validators\\...')
+#7 /app/vendor/yiisoft/yii2/validators/RequiredValidator.php(95): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 /app/vendor/yiisoft/yii2/widgets/ActiveField.php(836): yii\validators\RequiredValidator->clientValidateAttribute(Object(common\models\LoginForm), 'username', Object(yii\web\View))
+#9 /app/vendor/yiisoft/yii2/widgets/ActiveField.php(236): yii\widgets\ActiveField->getClientOptions()
+#10 /app/vendor/yiisoft/yii2/widgets/ActiveField.php(226): yii\widgets\ActiveField->begin()
+#11 /app/vendor/yiisoft/yii2-bootstrap5/src/ActiveField.php(267): yii\widgets\ActiveField->render('<label class="f...')
+#12 /app/vendor/yiisoft/yii2/widgets/ActiveField.php(177): yii\bootstrap5\ActiveField->render()
+#13 /app/backend/views/site/login.php(20): yii\widgets\ActiveField->__toString()
+#14 /app/vendor/yiisoft/yii2/base/View.php(348): require('/app/backend/vi...')
+#15 /app/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/app/backend/vi...', Array)
+#16 /app/vendor/yiisoft/yii2/base/View.php(157): yii\base\View->renderFile('/app/backend/vi...', Array, Object(backend\controllers\SiteController))
+#17 /app/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->render('login', Array, Object(backend\controllers\SiteController))
+#18 /app/backend/controllers/SiteController.php(39): yii\base\Controller->render('login', Array)
+#19 [internal function]: backend\controllers\SiteController->actionLogin()
+#20 /app/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#21 /app/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#22 /app/vendor/yiisoft/yii2/base/Module.php(548): yii\base\Controller->runAction('login', Array)
+#23 /app/vendor/yiisoft/yii2/web/Application.php(106): yii\base\Module->runAction('site/login', Array)
+#24 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 /app/backend/web/index.php(16): yii\base\Application->run()
+#26 {main}
+2026-03-10 22:19:57 [169.150.247.37][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PAYME_SECRET_KEY' => 'secret'
+    'HOSTNAME' => '576f3936c970'
+    'DB_PORT' => '3306'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'DB_DATABASE' => 'beruniy_qabul'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PAYME_MERCHANT_ID' => 'Paycom'
+    'TELEGRAM_BOT_TOKEN' => 'yourtoken'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.1.34'
+    'DB_USERNAME' => 'root'
+    'GPG_KEYS' => '528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD'
+    'PROJECT_NAME' => 'beruniy-qabul'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz.asc'
+    'AMOCRM_TOKEN' => 'yourtoken'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'TELEGRAM_CHAT_ID' => 'yourchat'
+    'DB_ROOT_PASSWORD' => 'root'
+    'NGINX_PORT' => '80'
+    'JWT_SECRET' => 'beruniy_rest_api_secret_2026'
+    'COOKIE_VALIDATION_KEY' => 'beruniy_2026_qabul_security_key'
+    'AMOCRM_DOMAIN' => 'yourdomain'
+    'DB_PASSWORD' => 'root'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/app'
+    'PHP_SHA256' => 'ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251'
+    'DB_HOST' => 'mariadb'
+    'USER' => 'www-data'
+    'HTTP_USER_AGENT' => 'Go-http-client/1.1'
+    'HTTP_HOST' => 'localhost'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.4'
+    'REMOTE_PORT' => '26992'
+    'REMOTE_ADDR' => '169.150.247.37'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/admin/index.php'
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'r=site/login'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1773181197.248
+    'REQUEST_TIME' => 1773181197
+    'argv' => [
+        0 => 'r=site/login'
+    ]
+    'argc' => 1
+]
+2026-03-10 22:19:57 [169.150.247.37][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The directory does not exist:  in /app/vendor/yiisoft/yii2/web/AssetManager.php:248
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/web/AssetManager.php(565): yii\web\AssetManager->checkBasePathPermission()
+#1 /app/vendor/yiisoft/yii2/web/AssetManager.php(497): yii\web\AssetManager->publishDirectory('/app/vendor/yii...', Array)
+#2 /app/vendor/yiisoft/yii2/web/AssetBundle.php(189): yii\web\AssetManager->publish('/app/vendor/yii...', Array)
+#3 /app/vendor/yiisoft/yii2/web/AssetManager.php(304): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#4 /app/vendor/yiisoft/yii2/web/AssetManager.php(275): yii\web\AssetManager->loadBundle('yii\\validators\\...', Array, true)
+#5 /app/vendor/yiisoft/yii2/web/View.php(319): yii\web\AssetManager->getBundle('yii\\validators\\...')
+#6 /app/vendor/yiisoft/yii2/web/AssetBundle.php(131): yii\web\View->registerAssetBundle('yii\\validators\\...')
+#7 /app/vendor/yiisoft/yii2/validators/RequiredValidator.php(95): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 /app/vendor/yiisoft/yii2/widgets/ActiveField.php(836): yii\validators\RequiredValidator->clientValidateAttribute(Object(common\models\LoginForm), 'username', Object(yii\web\View))
+#9 /app/vendor/yiisoft/yii2/widgets/ActiveField.php(236): yii\widgets\ActiveField->getClientOptions()
+#10 /app/vendor/yiisoft/yii2/widgets/ActiveField.php(226): yii\widgets\ActiveField->begin()
+#11 /app/vendor/yiisoft/yii2-bootstrap5/src/ActiveField.php(267): yii\widgets\ActiveField->render('<label class="f...')
+#12 /app/vendor/yiisoft/yii2/widgets/ActiveField.php(177): yii\bootstrap5\ActiveField->render()
+#13 /app/backend/views/site/login.php(20): yii\widgets\ActiveField->__toString()
+#14 /app/vendor/yiisoft/yii2/base/View.php(348): require('/app/backend/vi...')
+#15 /app/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/app/backend/vi...', Array)
+#16 /app/vendor/yiisoft/yii2/base/View.php(157): yii\base\View->renderFile('/app/backend/vi...', Array, Object(backend\controllers\SiteController))
+#17 /app/vendor/yiisoft/yii2/base/Controller.php(424): yii\base\View->render('login', Array, Object(backend\controllers\SiteController))
+#18 /app/backend/controllers/SiteController.php(39): yii\base\Controller->render('login', Array)
+#19 [internal function]: backend\controllers\SiteController->actionLogin()
+#20 /app/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#21 /app/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#22 /app/vendor/yiisoft/yii2/base/Module.php(548): yii\base\Controller->runAction('login', Array)
+#23 /app/vendor/yiisoft/yii2/web/Application.php(106): yii\base\Module->runAction('site/login', Array)
+#24 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 /app/backend/web/index.php(16): yii\base\Application->run()
+#26 {main}
+2026-03-10 22:19:57 [169.150.247.37][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PAYME_SECRET_KEY' => 'secret'
+    'HOSTNAME' => '576f3936c970'
+    'DB_PORT' => '3306'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'DB_DATABASE' => 'beruniy_qabul'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PAYME_MERCHANT_ID' => 'Paycom'
+    'TELEGRAM_BOT_TOKEN' => 'yourtoken'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.1.34'
+    'DB_USERNAME' => 'root'
+    'GPG_KEYS' => '528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD'
+    'PROJECT_NAME' => 'beruniy-qabul'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz.asc'
+    'AMOCRM_TOKEN' => 'yourtoken'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'TELEGRAM_CHAT_ID' => 'yourchat'
+    'DB_ROOT_PASSWORD' => 'root'
+    'NGINX_PORT' => '80'
+    'JWT_SECRET' => 'beruniy_rest_api_secret_2026'
+    'COOKIE_VALIDATION_KEY' => 'beruniy_2026_qabul_security_key'
+    'AMOCRM_DOMAIN' => 'yourdomain'
+    'DB_PASSWORD' => 'root'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/app'
+    'PHP_SHA256' => 'ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251'
+    'DB_HOST' => 'mariadb'
+    'USER' => 'www-data'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_USER_AGENT' => 'Go-http-client/1.1'
+    'HTTP_HOST' => 'localhost'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.4'
+    'REMOTE_PORT' => '26992'
+    'REMOTE_ADDR' => '169.150.247.37'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/admin/index.php'
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/login'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1773181197.3216
+    'REQUEST_TIME' => 1773181197
+    'argv' => [
+        0 => 'r=site/login'
+    ]
+    'argc' => 1
+]
+2026-03-10 22:20:34 [169.150.247.37][-][-][error][Error] Error: Class "common\widgets\Alert" not found in /app/backend/views/layouts/main.php:322
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /app/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/app/backend/vi...', Array)
+#2 /app/vendor/yiisoft/yii2/base/Controller.php(439): yii\base\View->renderFile('/app/backend/vi...', Array, Object(backend\controllers\SiteController))
+#3 /app/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\Controller->renderContent('<div class="sit...')
+#4 /app/backend/controllers/SiteController.php(39): yii\base\Controller->render('login', Array)
+#5 [internal function]: backend\controllers\SiteController->actionLogin()
+#6 /app/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#7 /app/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#8 /app/vendor/yiisoft/yii2/base/Module.php(548): yii\base\Controller->runAction('login', Array)
+#9 /app/vendor/yiisoft/yii2/web/Application.php(106): yii\base\Module->runAction('site/login', Array)
+#10 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /app/backend/web/index.php(16): yii\base\Application->run()
+#12 {main}
+2026-03-10 22:20:34 [169.150.247.37][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PAYME_SECRET_KEY' => 'secret'
+    'HOSTNAME' => '576f3936c970'
+    'DB_PORT' => '3306'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'DB_DATABASE' => 'beruniy_qabul'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PAYME_MERCHANT_ID' => 'Paycom'
+    'TELEGRAM_BOT_TOKEN' => 'yourtoken'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.1.34'
+    'DB_USERNAME' => 'root'
+    'GPG_KEYS' => '528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD'
+    'PROJECT_NAME' => 'beruniy-qabul'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz.asc'
+    'AMOCRM_TOKEN' => 'yourtoken'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'TELEGRAM_CHAT_ID' => 'yourchat'
+    'DB_ROOT_PASSWORD' => 'root'
+    'NGINX_PORT' => '80'
+    'JWT_SECRET' => 'beruniy_rest_api_secret_2026'
+    'COOKIE_VALIDATION_KEY' => 'beruniy_2026_qabul_security_key'
+    'AMOCRM_DOMAIN' => 'yourdomain'
+    'DB_PASSWORD' => 'root'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/app'
+    'PHP_SHA256' => 'ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251'
+    'DB_HOST' => 'mariadb'
+    'USER' => 'www-data'
+    'HTTP_USER_AGENT' => 'Go-http-client/1.1'
+    'HTTP_HOST' => 'localhost'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.4'
+    'REMOTE_PORT' => '26992'
+    'REMOTE_ADDR' => '169.150.247.37'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/admin/index.php'
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'r=site/login'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1773181234.0085
+    'REQUEST_TIME' => 1773181234
+    'argv' => [
+        0 => 'r=site/login'
+    ]
+    'argc' => 1
+]
+2026-03-10 22:20:34 [169.150.247.37][-][-][error][Error] Error: Class "common\widgets\Alert" not found in /app/backend/views/layouts/main.php:322
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /app/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/app/backend/vi...', Array)
+#2 /app/vendor/yiisoft/yii2/base/Controller.php(439): yii\base\View->renderFile('/app/backend/vi...', Array, Object(backend\controllers\SiteController))
+#3 /app/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\Controller->renderContent('<div class="sit...')
+#4 /app/backend/controllers/SiteController.php(39): yii\base\Controller->render('login', Array)
+#5 [internal function]: backend\controllers\SiteController->actionLogin()
+#6 /app/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#7 /app/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#8 /app/vendor/yiisoft/yii2/base/Module.php(548): yii\base\Controller->runAction('login', Array)
+#9 /app/vendor/yiisoft/yii2/web/Application.php(106): yii\base\Module->runAction('site/login', Array)
+#10 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /app/backend/web/index.php(16): yii\base\Application->run()
+#12 {main}
+2026-03-10 22:20:34 [169.150.247.37][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PAYME_SECRET_KEY' => 'secret'
+    'HOSTNAME' => '576f3936c970'
+    'DB_PORT' => '3306'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'DB_DATABASE' => 'beruniy_qabul'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PAYME_MERCHANT_ID' => 'Paycom'
+    'TELEGRAM_BOT_TOKEN' => 'yourtoken'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.1.34'
+    'DB_USERNAME' => 'root'
+    'GPG_KEYS' => '528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD'
+    'PROJECT_NAME' => 'beruniy-qabul'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz.asc'
+    'AMOCRM_TOKEN' => 'yourtoken'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'TELEGRAM_CHAT_ID' => 'yourchat'
+    'DB_ROOT_PASSWORD' => 'root'
+    'NGINX_PORT' => '80'
+    'JWT_SECRET' => 'beruniy_rest_api_secret_2026'
+    'COOKIE_VALIDATION_KEY' => 'beruniy_2026_qabul_security_key'
+    'AMOCRM_DOMAIN' => 'yourdomain'
+    'DB_PASSWORD' => 'root'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/app'
+    'PHP_SHA256' => 'ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251'
+    'DB_HOST' => 'mariadb'
+    'USER' => 'www-data'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_USER_AGENT' => 'Go-http-client/1.1'
+    'HTTP_HOST' => 'localhost'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.4'
+    'REMOTE_PORT' => '26992'
+    'REMOTE_ADDR' => '169.150.247.37'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/admin/index.php'
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/login'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1773181234.1043
+    'REQUEST_TIME' => 1773181234
+    'argv' => [
+        0 => 'r=site/login'
+    ]
+    'argc' => 1
+]
+2026-03-10 22:20:55 [169.150.247.37][-][-][error][Error] Error: Class "common\widgets\Alert" not found in /app/backend/views/layouts/main.php:322
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /app/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/app/backend/vi...', Array)
+#2 /app/vendor/yiisoft/yii2/base/Controller.php(439): yii\base\View->renderFile('/app/backend/vi...', Array, Object(backend\controllers\SiteController))
+#3 /app/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\Controller->renderContent('<div class="sit...')
+#4 /app/backend/controllers/SiteController.php(39): yii\base\Controller->render('login', Array)
+#5 [internal function]: backend\controllers\SiteController->actionLogin()
+#6 /app/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#7 /app/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#8 /app/vendor/yiisoft/yii2/base/Module.php(548): yii\base\Controller->runAction('login', Array)
+#9 /app/vendor/yiisoft/yii2/web/Application.php(106): yii\base\Module->runAction('site/login', Array)
+#10 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /app/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2026-03-10 22:20:55 [169.150.247.37][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PAYME_SECRET_KEY' => 'secret'
+    'HOSTNAME' => '576f3936c970'
+    'DB_PORT' => '3306'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'DB_DATABASE' => 'beruniy_qabul'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PAYME_MERCHANT_ID' => 'Paycom'
+    'TELEGRAM_BOT_TOKEN' => 'yourtoken'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.1.34'
+    'DB_USERNAME' => 'root'
+    'GPG_KEYS' => '528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD'
+    'PROJECT_NAME' => 'beruniy-qabul'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz.asc'
+    'AMOCRM_TOKEN' => 'yourtoken'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'TELEGRAM_CHAT_ID' => 'yourchat'
+    'DB_ROOT_PASSWORD' => 'root'
+    'NGINX_PORT' => '80'
+    'JWT_SECRET' => 'beruniy_rest_api_secret_2026'
+    'COOKIE_VALIDATION_KEY' => 'beruniy_2026_qabul_security_key'
+    'AMOCRM_DOMAIN' => 'yourdomain'
+    'DB_PASSWORD' => 'root'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/app'
+    'PHP_SHA256' => 'ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251'
+    'DB_HOST' => 'mariadb'
+    'USER' => 'www-data'
+    'HTTP_USER_AGENT' => 'Go-http-client/1.1'
+    'HTTP_HOST' => 'localhost'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.4'
+    'REMOTE_PORT' => '26992'
+    'REMOTE_ADDR' => '169.150.247.37'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/admin/index.php'
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'r=site/login'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1773181255.45
+    'REQUEST_TIME' => 1773181255
+    'argv' => [
+        0 => 'r=site/login'
+    ]
+    'argc' => 1
+]
+2026-03-10 22:20:55 [169.150.247.37][-][-][error][Error] Error: Class "common\widgets\Alert" not found in /app/backend/views/layouts/main.php:322
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /app/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/app/backend/vi...', Array)
+#2 /app/vendor/yiisoft/yii2/base/Controller.php(439): yii\base\View->renderFile('/app/backend/vi...', Array, Object(backend\controllers\SiteController))
+#3 /app/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\Controller->renderContent('<div class="sit...')
+#4 /app/backend/controllers/SiteController.php(39): yii\base\Controller->render('login', Array)
+#5 [internal function]: backend\controllers\SiteController->actionLogin()
+#6 /app/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#7 /app/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#8 /app/vendor/yiisoft/yii2/base/Module.php(548): yii\base\Controller->runAction('login', Array)
+#9 /app/vendor/yiisoft/yii2/web/Application.php(106): yii\base\Module->runAction('site/login', Array)
+#10 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /app/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2026-03-10 22:20:55 [169.150.247.37][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PAYME_SECRET_KEY' => 'secret'
+    'HOSTNAME' => '576f3936c970'
+    'DB_PORT' => '3306'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'DB_DATABASE' => 'beruniy_qabul'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PAYME_MERCHANT_ID' => 'Paycom'
+    'TELEGRAM_BOT_TOKEN' => 'yourtoken'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.1.34'
+    'DB_USERNAME' => 'root'
+    'GPG_KEYS' => '528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD'
+    'PROJECT_NAME' => 'beruniy-qabul'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz.asc'
+    'AMOCRM_TOKEN' => 'yourtoken'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'TELEGRAM_CHAT_ID' => 'yourchat'
+    'DB_ROOT_PASSWORD' => 'root'
+    'NGINX_PORT' => '80'
+    'JWT_SECRET' => 'beruniy_rest_api_secret_2026'
+    'COOKIE_VALIDATION_KEY' => 'beruniy_2026_qabul_security_key'
+    'AMOCRM_DOMAIN' => 'yourdomain'
+    'DB_PASSWORD' => 'root'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/app'
+    'PHP_SHA256' => 'ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251'
+    'DB_HOST' => 'mariadb'
+    'USER' => 'www-data'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_USER_AGENT' => 'Go-http-client/1.1'
+    'HTTP_HOST' => 'localhost'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.4'
+    'REMOTE_PORT' => '26992'
+    'REMOTE_ADDR' => '169.150.247.37'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/admin/index.php'
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/login'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1773181255.4708
+    'REQUEST_TIME' => 1773181255
+    'argv' => [
+        0 => 'r=site/login'
+    ]
+    'argc' => 1
+]
+2026-03-10 22:21:24 [169.150.247.37][-][-][error][Error] Error: Class "common\widgets\Alert" not found in /app/backend/views/layouts/main.php:322
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /app/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/app/backend/vi...', Array)
+#2 /app/vendor/yiisoft/yii2/base/Controller.php(439): yii\base\View->renderFile('/app/backend/vi...', Array, Object(backend\controllers\SiteController))
+#3 /app/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\Controller->renderContent('<div class="sit...')
+#4 /app/backend/controllers/SiteController.php(39): yii\base\Controller->render('login', Array)
+#5 [internal function]: backend\controllers\SiteController->actionLogin()
+#6 /app/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#7 /app/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#8 /app/vendor/yiisoft/yii2/base/Module.php(548): yii\base\Controller->runAction('login', Array)
+#9 /app/vendor/yiisoft/yii2/web/Application.php(106): yii\base\Module->runAction('site/login', Array)
+#10 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /app/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2026-03-10 22:21:24 [169.150.247.37][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PAYME_SECRET_KEY' => 'secret'
+    'HOSTNAME' => '576f3936c970'
+    'DB_PORT' => '3306'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'DB_DATABASE' => 'beruniy_qabul'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PAYME_MERCHANT_ID' => 'Paycom'
+    'TELEGRAM_BOT_TOKEN' => 'yourtoken'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.1.34'
+    'DB_USERNAME' => 'root'
+    'GPG_KEYS' => '528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD'
+    'PROJECT_NAME' => 'beruniy-qabul'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz.asc'
+    'AMOCRM_TOKEN' => 'yourtoken'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'TELEGRAM_CHAT_ID' => 'yourchat'
+    'DB_ROOT_PASSWORD' => 'root'
+    'NGINX_PORT' => '80'
+    'JWT_SECRET' => 'beruniy_rest_api_secret_2026'
+    'COOKIE_VALIDATION_KEY' => 'beruniy_2026_qabul_security_key'
+    'AMOCRM_DOMAIN' => 'yourdomain'
+    'DB_PASSWORD' => 'root'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/app'
+    'PHP_SHA256' => 'ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251'
+    'DB_HOST' => 'mariadb'
+    'USER' => 'www-data'
+    'HTTP_USER_AGENT' => 'Go-http-client/1.1'
+    'HTTP_HOST' => 'localhost'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.4'
+    'REMOTE_PORT' => '26992'
+    'REMOTE_ADDR' => '169.150.247.37'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/admin/index.php'
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'r=site/login'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1773181284.615
+    'REQUEST_TIME' => 1773181284
+    'argv' => [
+        0 => 'r=site/login'
+    ]
+    'argc' => 1
+]
+2026-03-10 22:21:24 [169.150.247.37][-][-][error][Error] Error: Class "common\widgets\Alert" not found in /app/backend/views/layouts/main.php:322
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /app/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/app/backend/vi...', Array)
+#2 /app/vendor/yiisoft/yii2/base/Controller.php(439): yii\base\View->renderFile('/app/backend/vi...', Array, Object(backend\controllers\SiteController))
+#3 /app/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\Controller->renderContent('<div class="sit...')
+#4 /app/backend/controllers/SiteController.php(39): yii\base\Controller->render('login', Array)
+#5 [internal function]: backend\controllers\SiteController->actionLogin()
+#6 /app/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#7 /app/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#8 /app/vendor/yiisoft/yii2/base/Module.php(548): yii\base\Controller->runAction('login', Array)
+#9 /app/vendor/yiisoft/yii2/web/Application.php(106): yii\base\Module->runAction('site/login', Array)
+#10 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /app/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2026-03-10 22:21:24 [169.150.247.37][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PAYME_SECRET_KEY' => 'secret'
+    'HOSTNAME' => '576f3936c970'
+    'DB_PORT' => '3306'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'DB_DATABASE' => 'beruniy_qabul'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PAYME_MERCHANT_ID' => 'Paycom'
+    'TELEGRAM_BOT_TOKEN' => 'yourtoken'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.1.34'
+    'DB_USERNAME' => 'root'
+    'GPG_KEYS' => '528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD'
+    'PROJECT_NAME' => 'beruniy-qabul'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz.asc'
+    'AMOCRM_TOKEN' => 'yourtoken'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'TELEGRAM_CHAT_ID' => 'yourchat'
+    'DB_ROOT_PASSWORD' => 'root'
+    'NGINX_PORT' => '80'
+    'JWT_SECRET' => 'beruniy_rest_api_secret_2026'
+    'COOKIE_VALIDATION_KEY' => 'beruniy_2026_qabul_security_key'
+    'AMOCRM_DOMAIN' => 'yourdomain'
+    'DB_PASSWORD' => 'root'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/app'
+    'PHP_SHA256' => 'ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251'
+    'DB_HOST' => 'mariadb'
+    'USER' => 'www-data'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_USER_AGENT' => 'Go-http-client/1.1'
+    'HTTP_HOST' => 'localhost'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.4'
+    'REMOTE_PORT' => '26992'
+    'REMOTE_ADDR' => '169.150.247.37'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/admin/index.php'
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/login'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1773181284.6509
+    'REQUEST_TIME' => 1773181284
+    'argv' => [
+        0 => 'r=site/login'
+    ]
+    'argc' => 1
+]
+2026-03-10 22:21:43 [169.150.247.37][-][-][error][Error] Error: Class "common\widgets\Alert" not found in /app/backend/views/layouts/main.php:322
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /app/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/app/backend/vi...', Array)
+#2 /app/vendor/yiisoft/yii2/base/Controller.php(439): yii\base\View->renderFile('/app/backend/vi...', Array, Object(backend\controllers\SiteController))
+#3 /app/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\Controller->renderContent('<div class="sit...')
+#4 /app/backend/controllers/SiteController.php(39): yii\base\Controller->render('login', Array)
+#5 [internal function]: backend\controllers\SiteController->actionLogin()
+#6 /app/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#7 /app/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#8 /app/vendor/yiisoft/yii2/base/Module.php(548): yii\base\Controller->runAction('login', Array)
+#9 /app/vendor/yiisoft/yii2/web/Application.php(106): yii\base\Module->runAction('site/login', Array)
+#10 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /app/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2026-03-10 22:21:42 [169.150.247.37][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PAYME_SECRET_KEY' => 'secret'
+    'HOSTNAME' => '576f3936c970'
+    'DB_PORT' => '3306'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'DB_DATABASE' => 'beruniy_qabul'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PAYME_MERCHANT_ID' => 'Paycom'
+    'TELEGRAM_BOT_TOKEN' => 'yourtoken'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.1.34'
+    'DB_USERNAME' => 'root'
+    'GPG_KEYS' => '528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD'
+    'PROJECT_NAME' => 'beruniy-qabul'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz.asc'
+    'AMOCRM_TOKEN' => 'yourtoken'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'TELEGRAM_CHAT_ID' => 'yourchat'
+    'DB_ROOT_PASSWORD' => 'root'
+    'NGINX_PORT' => '80'
+    'JWT_SECRET' => 'beruniy_rest_api_secret_2026'
+    'COOKIE_VALIDATION_KEY' => 'beruniy_2026_qabul_security_key'
+    'AMOCRM_DOMAIN' => 'yourdomain'
+    'DB_PASSWORD' => 'root'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/app'
+    'PHP_SHA256' => 'ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251'
+    'DB_HOST' => 'mariadb'
+    'USER' => 'www-data'
+    'HTTP_USER_AGENT' => 'Go-http-client/1.1'
+    'HTTP_HOST' => 'localhost'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.4'
+    'REMOTE_PORT' => '26992'
+    'REMOTE_ADDR' => '169.150.247.37'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/admin/index.php'
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'r=site/login'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1773181302.9768
+    'REQUEST_TIME' => 1773181302
+    'argv' => [
+        0 => 'r=site/login'
+    ]
+    'argc' => 1
+]
+2026-03-10 22:21:43 [169.150.247.37][-][-][error][Error] Error: Class "common\widgets\Alert" not found in /app/backend/views/layouts/main.php:322
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /app/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/app/backend/vi...', Array)
+#2 /app/vendor/yiisoft/yii2/base/Controller.php(439): yii\base\View->renderFile('/app/backend/vi...', Array, Object(backend\controllers\SiteController))
+#3 /app/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\Controller->renderContent('<div class="sit...')
+#4 /app/backend/controllers/SiteController.php(39): yii\base\Controller->render('login', Array)
+#5 [internal function]: backend\controllers\SiteController->actionLogin()
+#6 /app/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#7 /app/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#8 /app/vendor/yiisoft/yii2/base/Module.php(548): yii\base\Controller->runAction('login', Array)
+#9 /app/vendor/yiisoft/yii2/web/Application.php(106): yii\base\Module->runAction('site/login', Array)
+#10 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /app/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2026-03-10 22:21:43 [169.150.247.37][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PAYME_SECRET_KEY' => 'secret'
+    'HOSTNAME' => '576f3936c970'
+    'DB_PORT' => '3306'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'DB_DATABASE' => 'beruniy_qabul'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PAYME_MERCHANT_ID' => 'Paycom'
+    'TELEGRAM_BOT_TOKEN' => 'yourtoken'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.1.34'
+    'DB_USERNAME' => 'root'
+    'GPG_KEYS' => '528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD'
+    'PROJECT_NAME' => 'beruniy-qabul'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz.asc'
+    'AMOCRM_TOKEN' => 'yourtoken'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'TELEGRAM_CHAT_ID' => 'yourchat'
+    'DB_ROOT_PASSWORD' => 'root'
+    'NGINX_PORT' => '80'
+    'JWT_SECRET' => 'beruniy_rest_api_secret_2026'
+    'COOKIE_VALIDATION_KEY' => 'beruniy_2026_qabul_security_key'
+    'AMOCRM_DOMAIN' => 'yourdomain'
+    'DB_PASSWORD' => 'root'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/app'
+    'PHP_SHA256' => 'ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251'
+    'DB_HOST' => 'mariadb'
+    'USER' => 'www-data'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_USER_AGENT' => 'Go-http-client/1.1'
+    'HTTP_HOST' => 'localhost'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.4'
+    'REMOTE_PORT' => '26992'
+    'REMOTE_ADDR' => '169.150.247.37'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/admin/index.php'
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/login'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1773181303.01
+    'REQUEST_TIME' => 1773181303
+    'argv' => [
+        0 => 'r=site/login'
+    ]
+    'argc' => 1
+]
+2026-03-10 22:21:55 [169.150.247.37][-][-][error][Error] Error: Class "common\widgets\Alert" not found in /app/backend/views/layouts/main.php:322
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /app/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/app/backend/vi...', Array)
+#2 /app/vendor/yiisoft/yii2/base/Controller.php(439): yii\base\View->renderFile('/app/backend/vi...', Array, Object(backend\controllers\SiteController))
+#3 /app/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\Controller->renderContent('<div class="sit...')
+#4 /app/backend/controllers/SiteController.php(39): yii\base\Controller->render('login', Array)
+#5 [internal function]: backend\controllers\SiteController->actionLogin()
+#6 /app/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#7 /app/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#8 /app/vendor/yiisoft/yii2/base/Module.php(548): yii\base\Controller->runAction('login', Array)
+#9 /app/vendor/yiisoft/yii2/web/Application.php(106): yii\base\Module->runAction('site/login', Array)
+#10 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /app/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2026-03-10 22:21:55 [169.150.247.37][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PAYME_SECRET_KEY' => 'secret'
+    'HOSTNAME' => '576f3936c970'
+    'DB_PORT' => '3306'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'DB_DATABASE' => 'beruniy_qabul'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PAYME_MERCHANT_ID' => 'Paycom'
+    'TELEGRAM_BOT_TOKEN' => 'yourtoken'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.1.34'
+    'DB_USERNAME' => 'root'
+    'GPG_KEYS' => '528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD'
+    'PROJECT_NAME' => 'beruniy-qabul'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz.asc'
+    'AMOCRM_TOKEN' => 'yourtoken'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'TELEGRAM_CHAT_ID' => 'yourchat'
+    'DB_ROOT_PASSWORD' => 'root'
+    'NGINX_PORT' => '80'
+    'JWT_SECRET' => 'beruniy_rest_api_secret_2026'
+    'COOKIE_VALIDATION_KEY' => 'beruniy_2026_qabul_security_key'
+    'AMOCRM_DOMAIN' => 'yourdomain'
+    'DB_PASSWORD' => 'root'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/app'
+    'PHP_SHA256' => 'ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251'
+    'DB_HOST' => 'mariadb'
+    'USER' => 'www-data'
+    'HTTP_USER_AGENT' => 'Go-http-client/1.1'
+    'HTTP_HOST' => 'localhost'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.4'
+    'REMOTE_PORT' => '26992'
+    'REMOTE_ADDR' => '169.150.247.37'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/admin/index.php'
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'r=site/login'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1773181315.5667
+    'REQUEST_TIME' => 1773181315
+    'argv' => [
+        0 => 'r=site/login'
+    ]
+    'argc' => 1
+]
+2026-03-10 22:21:55 [169.150.247.37][-][-][error][Error] Error: Class "common\widgets\Alert" not found in /app/backend/views/layouts/main.php:322
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /app/vendor/yiisoft/yii2/base/View.php(258): yii\base\View->renderPhpFile('/app/backend/vi...', Array)
+#2 /app/vendor/yiisoft/yii2/base/Controller.php(439): yii\base\View->renderFile('/app/backend/vi...', Array, Object(backend\controllers\SiteController))
+#3 /app/vendor/yiisoft/yii2/base/Controller.php(425): yii\base\Controller->renderContent('<div class="sit...')
+#4 /app/backend/controllers/SiteController.php(39): yii\base\Controller->render('login', Array)
+#5 [internal function]: backend\controllers\SiteController->actionLogin()
+#6 /app/vendor/yiisoft/yii2/base/InlineAction.php(61): call_user_func_array(Array, Array)
+#7 /app/vendor/yiisoft/yii2/base/Controller.php(183): yii\base\InlineAction->runWithParams(Array)
+#8 /app/vendor/yiisoft/yii2/base/Module.php(548): yii\base\Controller->runAction('login', Array)
+#9 /app/vendor/yiisoft/yii2/web/Application.php(106): yii\base\Module->runAction('site/login', Array)
+#10 /app/vendor/yiisoft/yii2/base/Application.php(383): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /app/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2026-03-10 22:21:55 [169.150.247.37][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PAYME_SECRET_KEY' => 'secret'
+    'HOSTNAME' => '576f3936c970'
+    'DB_PORT' => '3306'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'DB_DATABASE' => 'beruniy_qabul'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PAYME_MERCHANT_ID' => 'Paycom'
+    'TELEGRAM_BOT_TOKEN' => 'yourtoken'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.1.34'
+    'DB_USERNAME' => 'root'
+    'GPG_KEYS' => '528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD'
+    'PROJECT_NAME' => 'beruniy-qabul'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz.asc'
+    'AMOCRM_TOKEN' => 'yourtoken'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.1.34.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'TELEGRAM_CHAT_ID' => 'yourchat'
+    'DB_ROOT_PASSWORD' => 'root'
+    'NGINX_PORT' => '80'
+    'JWT_SECRET' => 'beruniy_rest_api_secret_2026'
+    'COOKIE_VALIDATION_KEY' => 'beruniy_2026_qabul_security_key'
+    'AMOCRM_DOMAIN' => 'yourdomain'
+    'DB_PASSWORD' => 'root'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/app'
+    'PHP_SHA256' => 'ffa9e0982e82eeaea848f57687b425ed173aa278fe563001310ae2638db5c251'
+    'DB_HOST' => 'mariadb'
+    'USER' => 'www-data'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_USER_AGENT' => 'Go-http-client/1.1'
+    'HTTP_HOST' => 'localhost'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.4'
+    'REMOTE_PORT' => '26992'
+    'REMOTE_ADDR' => '169.150.247.37'
+    'SERVER_SOFTWARE' => 'nginx/1.19.10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/admin/index.php'
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/login'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1773181315.6085
+    'REQUEST_TIME' => 1773181315
+    'argv' => [
+        0 => 'r=site/login'
+    ]
+    'argc' => 1
+]
