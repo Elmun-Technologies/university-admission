@@ -106,7 +106,11 @@ class ExamController extends Controller
             $attempt->save(false);
 
             // Update Student Status natively
-            $student->logStatusChange(Student::STATUS_EXAM_SCHEDULED, Yii::$app->user->id, "Imtihon sanasi tanlandi: " . $date->exam_date);
+            $student->logStatusChange(
+                Student::STATUS_EXAM_SCHEDULED,
+                Yii::$app->user->id,
+                "Imtihon sanasi tanlandi: " . $date->exam_date
+            );
             $student->save(false);
 
             $transaction->commit();

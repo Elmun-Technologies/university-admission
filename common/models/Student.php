@@ -133,7 +133,8 @@ class Student extends \common\db\BranchActiveRecord
             [['pinfl'], 'unique', 'skipOnEmpty' => true],
             [['passport_series', 'passport_number'], 'unique',
                 'targetAttribute' => ['passport_series', 'passport_number'],
-                'skipOnEmpty' => true, 'message' => 'Ushbu pasport seriya va raqamli abituriyent ro\'yxatdan o\'tgan.'],
+                'skipOnEmpty' => true,
+                'message' => 'Ushbu pasport seriya va raqamli abituriyent ro\'yxatdan o\'tgan.'],
 
             // Phone regex pattern +998XXXXXXXXX
             [['phone', 'phone2'], 'match', 'pattern' => '/^\+998\d{9}$/',
