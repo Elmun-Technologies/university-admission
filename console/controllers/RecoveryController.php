@@ -15,7 +15,7 @@ class RecoveryController extends Controller
      * Finds and restores the latest backup from a directory.
      * @param string $backupDir
      */
-    public function actionRestoreLatest($backupDir = '/opt/beruniy/backups')
+    public function actionRestoreLatest($backupDir = '/opt/university-admission/backups')
     {
         $this->stdout("--- 🛠 Starting Disaster Recovery ---\n", Console::FG_CYAN);
 

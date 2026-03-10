@@ -26,7 +26,7 @@ class m260310_221837_seed_initial_user extends Migration
             'id' => 1,
             'branch_id' => 1,
             'username' => 'admin',
-            'email' => 'admin@beruniy.uz',
+            'email' => 'admin@university-admission.uz',
             'password_hash' => Yii::$app->security->generatePasswordHash('admin123'),
             'auth_key' => Yii::$app->security->generateRandomString(),
             'status' => 1,

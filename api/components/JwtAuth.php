@@ -14,13 +14,13 @@ class JwtAuth
 {
     private static function getSecret()
     {
-        return getenv('JWT_SECRET') ?: 'beruniy_secret_key_2026';
+        return getenv('JWT_SECRET') ?: 'uni_admission_secret_key_2026';
     }
 
     public static function generateToken($userId)
     {
         $payload = [
-            'iss' => 'beruniy-qabul',
+            'iss' => 'university-admission',
             'iat' => time(),
             'exp' => time() + (3600 * 24), // 24 hours
             'sub' => $userId,

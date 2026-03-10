@@ -23,4 +23,4 @@ echo "Note: This may ask for your GitHub username and Personal Access Token (PAT
 git push -u origin main
 
 echo "--- ✅ Push Successful! ---"
-echo "View your code at: https://github.com/Elmun-Technologies/beruniy-qabul"
+echo "View your code at: https://github.com/Elmun-Technologies/university-admission"

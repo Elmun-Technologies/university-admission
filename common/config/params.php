@@ -1,9 +1,9 @@
 <?php
 return [
-    'adminEmail' => 'admin@beruniy.uz',
-    'supportEmail' => 'support@beruniy.uz',
-    'senderEmail' => 'noreply@beruniy.uz',
-    'senderName' => 'Beruniy Qabul',
+    'adminEmail' => 'admin@university-admission.uz',
+    'supportEmail' => 'support@university-admission.uz',
+    'senderEmail' => 'noreply@university-admission.uz',
+    'senderName' => 'University Admission',
     'user.passwordResetTokenExpire' => 3600,
     'user.passwordMinLength' => 8,
 
@@ -11,7 +11,7 @@ return [
     'maxFileUploadMb' => 5,
     'supportedImageTypes' => ['jpg', 'jpeg', 'png'],
     'studentPhotoMaxWidth' => 400,
-    'contractNumberPrefix' => 'BRN',
+    'contractNumberPrefix' => 'UNI',
     'examTimeWarningMinutes' => 5,
     'maxLoginAttempts' => 5,
     'loginLockoutMinutes' => 15,

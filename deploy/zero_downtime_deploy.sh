@@ -22,8 +22,8 @@ if [[ -z "$NAME" || -z "$PORT" ]]; then
     exit 1
 fi
 
-BASE_DIR="/opt/beruniy/${NAME}"
-NEW_DIR="/opt/beruniy/${NAME}_new"
+BASE_DIR="/opt/university-admission/${NAME}"
+NEW_DIR="/opt/university-admission/${NAME}_new"
 TEMP_PORT=$((PORT + 1000))
 
 echo "--- 🚀 Starting Zero-Downtime Deploy: ${NAME} ---"

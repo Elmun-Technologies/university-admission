@@ -22,7 +22,7 @@ class DashboardController extends Controller
             [
                 'id' => 1,
                 'name' => 'Tashkent University',
-                'domain' => 'tashkent-univer.beruniy-qabul.uz',
+                'domain' => 'tashkent.university-admission.uz',
                 'student_count' => 1250,
                 'status' => 'Active',
                 'last_activity' => '2 minutes ago',
@@ -30,7 +30,7 @@ class DashboardController extends Controller
             [
                 'id' => 2,
                 'name' => 'Samarkand State',
-                'domain' => 'samarkand.beruniy-qabul.uz',
+                'domain' => 'samarkand.university-admission.uz',
                 'student_count' => 840,
                 'status' => 'Active',
                 'last_activity' => '15 minutes ago',

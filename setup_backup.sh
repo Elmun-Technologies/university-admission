@@ -1,5 +1,5 @@
 #!/bin/bash
-# beruniy-qabul backup and stats cron setup
+# university-admission backup and stats cron setup
 # This script is intended to be run via cron to trigger Yii2 console actions.
 
 # Get the absolute path to the project directory

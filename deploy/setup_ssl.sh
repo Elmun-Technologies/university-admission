@@ -20,7 +20,7 @@ nginx -t
 
 # 2. Use certbot with nginx plugin
 echo "Requesting SSL certificate..."
-certbot --nginx -d "${DOMAIN}" --non-interactive --agree-tos --email admin@beruniy.uz
+certbot --nginx -d "${DOMAIN}" --non-interactive --agree-tos --email admin@university-admission.uz
 
 # 3. Set up auto-renewal cron if not exists
 if ! crontab -l | grep -q "certbot renew"; then

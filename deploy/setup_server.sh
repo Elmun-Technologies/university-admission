@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# setup_server.sh - Initial Ubuntu Server Setup for Beruniy-Qabul
+# setup_server.sh - Initial Ubuntu Server Setup for University Admission System
 # Run as root: sudo ./setup_server.sh
 
 set -e
@@ -46,9 +46,9 @@ sed -i 's/PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_c
 systemctl restart ssh
 
 # 7. Create directory structure
-echo "Creating /opt/beruniy structure..."
-mkdir -p /opt/beruniy
-chmod 755 /opt/beruniy
+echo "Creating /opt/university-admission structure..."
+mkdir -p /opt/university-admission
+chmod 755 /opt/university-admission
 
 # 8. Install Certbot for SSL
 echo "Installing Certbot..."

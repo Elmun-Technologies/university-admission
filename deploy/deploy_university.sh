@@ -26,7 +26,7 @@ if [[ -z "$NAME" || -z "$PORT" || -z "$DB_PORT" ]]; then
     exit 1
 fi
 
-DEPLOY_DIR="/opt/beruniy/${NAME}"
+DEPLOY_DIR="/opt/university-admission/${NAME}"
 echo "--- 🎓 Deploying University: ${NAME} ---"
 
 # 1. Create directory structure
@@ -48,8 +48,8 @@ cat <<EOF > "${DEPLOY_DIR}/.env"
 PROJECT_NAME=${NAME}
 NGINX_PORT=${PORT}
 DB_HOST=mariadb
-DB_DATABASE=beruniy_${NAME}
-DB_USERNAME=beruniy_user
+DB_DATABASE=uni_${NAME}
+DB_USERNAME=uni_user
 DB_PASSWORD=${DB_PASSWORD}
 DB_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
 DB_EXTERNAL_PORT=${DB_PORT}

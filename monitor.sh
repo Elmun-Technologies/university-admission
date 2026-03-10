@@ -1,8 +1,8 @@
 #!/bin/bash
-# beruniy-qabul monitoring script
+# university-admission monitoring script
 # Checks the health endpoint and alerts via Telegram if system is down.
 
-HEALTH_URL="https://beruniy-qabul.uz/health" # Replace with actual production URL
+HEALTH_URL="https://university-admission.uz/health" # Replace with actual production URL
 LOG_FILE="/tmp/monitor.log"
 BOT_TOKEN="YOUR_BOT_TOKEN"
 CHAT_ID="YOUR_CHAT_ID"

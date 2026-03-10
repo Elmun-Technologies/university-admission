@@ -28,7 +28,7 @@ $branchName = $user ? ($user->branch->name_uz ?? 'Boshqarv Markazi') : 'Tizim';
 
 <head>
     <title>
-        <?= Html::encode($this->title) ?> - Qabul Tizimi
+        <?= Html::encode($this->title) ?> - University Admission System
     </title>
     <!-- Add Bootstrap Icons CDN natively for the sidebar mapping -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -173,7 +173,7 @@ $branchName = $user ? ($user->branch->name_uz ?? 'Boshqarv Markazi') : 'Tizim';
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h4 class="mb-0 text-white fw-bold"><i class="bi bi-mortarboard text-primary"></i> Beruniy</h4>
+                <h4 class="mb-0 text-white fw-bold"><i class="bi bi-mortarboard text-primary"></i> Admission</h4>
                 <div class="small text-muted mt-2 text-truncate" title="<?= Html::encode($branchName) ?>">
                     <?= Html::encode($branchName) ?>
                 </div>
@@ -244,7 +244,7 @@ $branchName = $user ? ($user->branch->name_uz ?? 'Boshqarv Markazi') : 'Tizim';
             </ul>
 
             <div class="p-4 small text-muted text-center mt-auto">
-                &copy; Beruniy Qabul
+                &copy; University Admission System
                 <?= date('Y') ?><br>v1.0.0
             </div>
         </nav>

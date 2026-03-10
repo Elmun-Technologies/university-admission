@@ -1,17 +1,17 @@
-# Disaster Recovery Plan - Beruniy-Qabul
+# Disaster Recovery Plan - University Admission System
 
 In the event of a system failure, follow these procedures.
 
 ## 1. Database Corruption / Loss
 
 **Risk:** Database becomes unreadable or data is accidentally deleted.
-**Strategy:** Restore from latest daily backup (stored in `/opt/beruniy/backups` and mirrored to Telegram).
+**Strategy:** Restore from latest daily backup (stored in `/opt/university-admission/backups` and mirrored to Telegram).
 
 ### Steps to Restore:
-1. Identify the latest backup file: `ls -t /opt/beruniy/backups/*.sql`
+1. Identify the latest backup file: `ls -t /opt/university-admission/backups/*.sql`
 2. Run the recovery command:
    ```bash
-   docker exec -i mariadb mysql -u beruniy_user -p'YOUR_PASSWORD' beruniy_db < backup.sql
+   docker exec -i mariadb mysql -u uni_user -p'YOUR_PASSWORD' uni_db < backup.sql
    ```
 3. Use the console tool:
    ```bash
@@ -26,7 +26,7 @@ In the event of a system failure, follow these procedures.
 ### Steps:
 1. Provision a fresh Ubuntu server.
 2. Run `curl ... | bash deploy/setup_server.sh`.
-3. Clone the repository to `/opt/beruniy/`.
+3. Clone the repository to `/opt/university-admission/`.
 4. Run `onboard_university.sh` for each instance.
 5. Download the latest database backup from the Telegram archive.
 6. Restore the database using Step 1 above.

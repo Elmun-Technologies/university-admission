@@ -5,7 +5,7 @@
 
 set -e
 
-echo "--- 🏢 Beruniy-Qabul University Onboarding ---"
+echo "--- 🏢 University Admission System Onboarding ---"
 
 # 1. Interactive Input
 read -p "University Name (e.g. Tashkent State): " UNI_NAME_RAW

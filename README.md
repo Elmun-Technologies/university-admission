@@ -1,6 +1,6 @@
-# Beruniy-Qabul: University Admission System
+# University Admission System
 
-Beruniy-Qabul is a high-performance, multi-tenant University Admission System built with Yii2 Advanced Framework and Docker. It is designed to handle large-scale student applications, automated exam processing, and multi-university management.
+A high-performance, multi-tenant University Admission System built with Yii2 Advanced Framework and Docker. It is designed to handle large-scale student applications, automated exam processing, and multi-university management.
 
 ## 🚀 Key Features
 

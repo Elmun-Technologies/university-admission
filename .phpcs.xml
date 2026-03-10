@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="Beruniy-Qabul PSR-12">
-    <description>PSR-12 coding standard for Beruniy-Qabul.</description>
+<ruleset name="University-Admission PSR-12">
+    <description>PSR-12 coding standard for University Admission System.</description>
     <arg name="basepath" value="."/>
     <arg name="colors"/>
     <arg name="parallel" value="75"/>

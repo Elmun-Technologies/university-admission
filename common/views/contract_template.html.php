@@ -89,7 +89,7 @@ $logoUrl = $branch->getLogoUrl() ?? Yii::getAlias('@web/images/logo.png'); // Fa
                     <?= $branch->address ?? 'Manzil kiritilmagan' ?>
                 </div>
                 <div style="font-size: 9pt;">Tel:
-                    <?= $branch->phone ?? '+998' ?> | Email: info@beruniy.edu.uz
+                    <?= $branch->phone ?? '+998' ?> | Email: info@university.edu.uz
                 </div>
             </td>
         </tr>
